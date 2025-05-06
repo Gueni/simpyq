@@ -1,0 +1,3 @@
+Plot voltage across R1
+RMS of current in L2
+Average power on Load1
