@@ -1,0 +1,18 @@
+query,intent
+"what is the mean of voltage",mean
+"average value of current",mean
+"calculate rms of signal",rms
+"root mean square of Vout",rms
+"multiply Vin and Iout",*
+"divide Vout by Vin",/
+"subtract V2 from V1",-
+"add voltage and current",+
+"take modulus of current and voltage",mod
+"calculate derivative of Vin",derive
+"integrate the current signal",integr
+"find the square root of V",sqrt
+"square the input signal",sqr
+"maximum value of signal",max
+"minimum of temperature",min
+"absolute max of Vout",abs max
+"absolute min of current",abs min
