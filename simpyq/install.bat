@@ -3,7 +3,7 @@ SET CMD_NAME=simpyq
 
 REM Get current script directory
 SET SCRIPT_DIR=%~dp0
-SET CLI_PATH=%SCRIPT_DIR%cli.py
+SET CLI_PATH=%SCRIPT_DIR%__main__.py
 
 REM Remove trailing backslash from SCRIPT_DIR if exists
 IF %SCRIPT_DIR:~-1%==\ SET SCRIPT_DIR=%SCRIPT_DIR:~0,-1%

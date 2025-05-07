@@ -1,5 +1,4 @@
-## __main__.py
-from cli import main
+from cli import run_cli
 
 if __name__ == "__main__":
-    main()
+    run_cli()
