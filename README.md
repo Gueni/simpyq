@@ -1,6 +1,6 @@
-# SimQuery: Command-Line Tool for Simulation Data Queries
+# simpyq: Command-Line Tool for Simulation Data Queries
 
-SimQuery is a command-line tool that allows users to query and analyze simulation data stored in CSV files. With this tool, you can easily visualize signals, calculate statistical metrics (e.g., RMS, average), and automate post-processing of your simulation results.
+simpyq is a command-line tool that allows users to query and analyze simulation data stored in CSV files. With this tool, you can easily visualize signals, calculate statistical metrics (e.g., RMS, average), and automate post-processing of your simulation results.
 
 This project is designed to be simple and extendable, allowing you to analyze different signals, plot them, and perform various analyses based on natural language queries.
 
@@ -32,15 +32,15 @@ pip install -r requirements.txt
 
 ## Installation
 
-To get started with SimQuery, follow these steps:
+To get started with simpyq, follow these steps:
 
 ### 1. Clone the Repository
 
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/simquery.git
-cd simquery
+git clone https://github.com/yourusername/simpyq.git
+cd simpyq
 ```
 
 ### 2. Install Dependencies
@@ -60,22 +60,22 @@ chmod +x install.sh
 ./install.sh
 ```
 
-This will allow you to run the tool directly as `simquery` from the terminal.
+This will allow you to run the tool directly as `simpyq` from the terminal.
 
 ## Usage
 
 ### Running the Tool
 
-To run SimQuery, use the following command:
+To run simpyq, use the following command:
 
 ```bash
-simquery <path_to_csv_file> [OPTIONS]
+simpyq <path_to_csv_file> [OPTIONS]
 ```
 
 #### Example
 
 ```bash
-simquery 'path/to/your/file.csv' --save --log
+simpyq 'path/to/your/file.csv' --save --log
 ```
 
 ### Available Options
@@ -87,7 +87,7 @@ simquery 'path/to/your/file.csv' --save --log
 
 ### Query Format
 
-SimQuery uses natural language queries. Here are some examples:
+simpyq uses natural language queries. Here are some examples:
 
 - **Plot signals**:  
   `Plot voltage across R1`
