@@ -86,20 +86,6 @@ exit()
 | `rms of Vout + mean of Iin * 2` | Composite math query                 |
 | `plot of Vout and Iin`          | (Use `--plot` flag instead)          |
 
----
-
-##  Directory Structure
-
-```
-simpyq/
-│
-├── cli.py                # Main CLI entry point
-├── core.py               # Signal processing, math
-├── utils.py              # Helpers, plotting, logging
-├── out/
-│   ├── logs/             # Query logs
-│   └── plots/            # Auto-saved plots
-```
 
 ---
 
