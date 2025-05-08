@@ -25,6 +25,8 @@ Analyze and visualize simulation data from CSV files using natural language quer
 
 ##  Installation
 
+Note : you need to have Spacy installed on your machine before installing.
+
 ```bash
 # Create environment (recommended)
 conda create -n simpyq_env python=3.10
