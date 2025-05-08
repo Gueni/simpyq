@@ -1,118 +1,173 @@
-# simpyq: Command-Line Tool for Simulation Data Queries
+Got it! Here's the entire `README.md` as one continuous **copy-paste-friendly code snippet** inside a fenced markdown block:
 
-simpyq is a command-line tool that allows users to query and analyze simulation data stored in CSV files. With this tool, you can easily visualize signals, calculate statistical metrics (e.g., RMS, average), and automate post-processing of your simulation results.
+````markdown
+# simpyQ
 
-This project is designed to be simple and extendable, allowing you to analyze different signals, plot them, and perform various analyses based on natural language queries.
+![Banner](https://img.shields.io/badge/version-1.0-blue)
+> CLI tool for querying simulation CSV data using natural language.
 
-## Features
+**Author:** Mohamed Gueni  
+**Purpose:** Analyze and visualize simulation data from CSV files using natural language queries interpreted via spaCy and a rule-enhanced NLP pipeline.
 
-- **Natural Language Query Interface**: Query simulation results using easy-to-understand commands such as "Plot voltage across R1" or "Compute average of Source Voltage".
-- **Support for Various Metrics**: Calculate RMS, average, or other metrics on the signal data.
-- **Plotting Capabilities**: Generate plots of signals over time.
-- **Batch Querying**: Support for batch queries from a file, enabling you to automate repeated analyses.
-- **Flexible CSV Format**: Automatically add headers to your CSV files based on your signal list, ensuring consistency and clarity in your analysis.
-- **Logging and Saving**: Optionally log results to a file and save generated plots for future use.
-- **Extendable**: Easily add more synonyms, signals, and operations as needed.
+---
 
-## Prerequisites
+## 🚀 Features
 
-Before using the tool, ensure you have the following dependencies installed:
+- Terminal-based CLI tool with live interactive mode  
+- Natural language processing of signal queries (e.g., `mean of Vout`)  
+- Signal name indexing and pretty terminal display using Rich  
+- Plotting of signal vs time with auto-saving to file  
+- Logging of results and errors to timestamped log files  
+- Lightweight, extensible, and easy to adapt to other domains  
 
-- **Python 3.x**: This tool is built with Python 3.
-- **Required Libraries**:
-  - `pandas`
-  - `matplotlib`
-  - `difflib` (Python standard library)
+---
 
-You can install the necessary libraries with the following command:
+## 📦 Installation
 
 ```bash
+# Create environment (recommended)
+conda create -n simpyq_env python=3.10
+conda activate simpyq_env
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Or install manually
+pip install pandas numpy matplotlib rich pyfiglet spacy
+python -m spacy download en_core_web_trf
 ```
 
-## Installation
+---
 
-To get started with simpyq, follow these steps:
-
-### 1. Clone the Repository
-
-First, clone the repository to your local machine:
+## 🧠 Usage
 
 ```bash
-git clone https://github.com/yourusername/simpyq.git
-cd simpyq
+# Run in one-shot mode (process query then exit)
+python simpyq/cli.py path/to/data.csv "mean of Vout"
+
+# Show available signals
+python simpyq/cli.py path/to/data.csv --show
+
+# Plot signal(s)
+python simpyq/cli.py path/to/data.csv --plot Vout Iload --start 0.1 --end 0.9
 ```
 
-### 2. Install Dependencies
-
-Install the required Python libraries:
+### 🔁 Interactive Mode
 
 ```bash
-pip install -r requirements.txt
+# Start interactive REPL
+python simpyq/cli.py path/to/data.csv
 ```
 
-### 3. Make the Script Executable (Optional)
+Then just type queries like:
 
-To make the script executable from the terminal without needing to specify `python` each time, you can create a simple shell script (`install.sh`):
+```
+mean of Vout
+rms of Iin
+(mean of Vout) + (rms of Iload) / 2
+exit()
+```
+
+---
+
+## 🧪 Example Queries
+
+| Query                           | Description                          |
+| ------------------------------- | ------------------------------------ |
+| `mean of Vout`                  | Computes the average value of `Vout` |
+| `rms of Iload`                  | Root-mean-square of `Iload`          |
+| `max of Temp - min of Temp`     | Temperature swing                    |
+| `integral of Pin`               | Energy under the `Pin` curve         |
+| `rms of Vout + mean of Iin * 2` | Composite math query                 |
+| `plot of Vout and Iin`          | (Use `--plot` flag instead)          |
+
+---
+
+## 📂 Directory Structure
+
+```
+simpyq/
+│
+├── cli.py                # Main CLI entry point
+├── core.py               # Signal processing, math
+├── utils.py              # Helpers, plotting, logging
+├── out/
+│   ├── logs/             # Query logs
+│   └── plots/            # Auto-saved plots
+```
+
+---
+
+## 🧩 Supported Operations
+
+```python
+OPERATIONS = {
+    "mean": np.mean,
+    "average": np.mean,
+    "rms": lambda x: np.sqrt(np.mean(np.square(x))),
+    "std": np.std,
+    "variance": np.var,
+    "max": np.max,
+    "min": np.min,
+    "abs max": lambda x: np.max(np.abs(x)),
+    "abs min": lambda x: np.min(np.abs(x)),
+    "sum": np.sum,
+    "peak-to-peak": lambda x: np.ptp(x),
+    "median": np.median,
+    "integral": lambda x: np.trapz(x),
+    "squared mean": lambda x: np.mean(np.square(x)),
+    "derivative": lambda x: np.gradient(x),
+    "diff": np.diff,
+}
+```
+
+---
+
+## 🧠 How It Works
+
+- Loads CSV data and extracts signal names  
+- Injects them as named entities into the spaCy NLP pipeline  
+- Parses user query and extracts operations and signals  
+- Computes the operations and evaluates full expressions  
+- Plots and saves results as needed  
+
+---
+
+## 🛠️ NLP Training / Fine-tuning
+
+You can customize the NLP model to better understand domain-specific expressions.
+
+**To train or adapt:**
+
+1. Edit `get_nlp()` to support additional patterns  
+2. Add `EntityRuler` rules:
+
+```python
+patterns = [{"label": "ELECTRONIC_SIGNAL", "pattern": name} for name in signal_names]
+ruler.add_patterns(patterns)
+```
+
+3. (Optional) Fine-tune spaCy model with labeled data:
 
 ```bash
-chmod +x install.sh
-./install.sh
+python -m spacy train config.cfg --output ./model --paths.train ./train.spacy --paths.dev ./dev.spacy
 ```
 
-This will allow you to run the tool directly as `simpyq` from the terminal.
+---
 
-## Usage
+## 📋 License
 
-### Running the Tool
+GPL v3 License
 
-To run simpyq, use the following command:
+---
 
-```bash
-simpyq <path_to_csv_file> [OPTIONS]
+## 👋 Acknowledgments
+
+Thanks to the open-source community and tools like:
+
+- [spaCy](https://spacy.io)  
+- [NumPy](https://numpy.org)  
+- [Matplotlib](https://matplotlib.org)  
+- [Rich](https://github.com/Textualize/rich)  
 ```
-
-#### Example
-
-```bash
-simpyq 'path/to/your/file.csv' --save --log
-```
-
-### Available Options
-
-- **`--save`**: Automatically saves the generated plots as image files.
-- **`--log`**: Logs the computed results to a log file.
-- **`--batch <file_path>`**: Executes multiple queries from a text file (one query per line).
-- **`--help`**: Displays help information about the tool.
-
-### Query Format
-
-simpyq uses natural language queries. Here are some examples:
-
-- **Plot signals**:  
-  `Plot voltage across R1`
-
-- **Compute RMS**:  
-  `Calculate RMS of Source Voltage`
-
-- **Compute average**:  
-  `Compute average of Source Current`
-
-The tool will try to match your queries to the available signals, and will provide suggestions if necessary.
-
-### Adding Custom Headers
-
-If your CSV files do not have headers, you can automatically add them using the utility script. The headers will be added based on the list of signals defined in the `mappings.py` file.
-
-To add headers:
-
-1. Modify the `HEADERS` list in the `mappings.py` file to include your desired signals.
-2. Run the `add_headers.py` script to insert the headers:
-
-```bash
-python add_headers.py path/to/your/file.csv
-```
-
-## License
-
-This project is licensed under the MIT License.
+````

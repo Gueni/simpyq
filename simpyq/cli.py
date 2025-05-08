@@ -83,7 +83,7 @@ def process_query(df, query, nlp):
     # Remove units before eval
     query_numeric = re.sub(r"\[.*?\]", "", query)
     final_result = eval(query_numeric)
-    return final_result, query
+    return final_result, query, unit
 
 def find_op(text):
     for op in OPERATIONS:
@@ -113,10 +113,10 @@ def plot_signals(df, signal_names, start=None, end=None, utc_stamp=""):
         plt.close()
         console.print(f"[green]Saved plot:[/green] {filename}")
 
-def log_result(logfile, query, result):
+def log_result(logfile, query, result,unit = ""):
     os.makedirs(log_path, exist_ok=True)
     with open(logfile, "a") as f:
-        f.write(f"{utc_stamp.isoformat()} | Query: {query} | Result: {result}\n")
+        f.write(f"{utc_stamp.isoformat()} | Query: {query} | Result: {result} {unit}\n")
 
 def main():
     parser = argparse.ArgumentParser(description="simpyq: Query CSV simulation data with natural language")
@@ -158,9 +158,9 @@ def main():
                 break
             if user_input == "":
                 continue
-            result, pretty_query = process_query(df, user_input, nlp)
-            console.print(f"[bold green]Result:[/bold green] {pretty_query} = [yellow]{result:.4f}[/yellow]")
-            log_result(f"{log_path}/querylog.log", user_input, result)
+            result, pretty_query ,unit= process_query(df, user_input, nlp)
+            console.print(f"[bold green]Result:[/bold green] {user_input} = [yellow]{result:.16f} {unit}[/yellow]")
+            log_result(f"{log_path}/querylog.log", user_input, result , unit)
         except KeyboardInterrupt:
             console.print("\n[bold cyan]Exiting simpyq. Goodbye![/bold cyan]")
             break

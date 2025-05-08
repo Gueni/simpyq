@@ -16,3 +16,12 @@
 2025-05-08T14:36:50.558304+00:00 | Query: "mean of Load Current" | Result: ERROR: Unknown format code 'f' for object of type 'str'
 2025-05-08T14:37:55.913703+00:00 | Query: sqrt(mean of Load Current) | Result: ERROR: name 'sqrt' is not defined
 2025-05-08T14:37:55.913703+00:00 | Query: rms Load Current | Result: ERROR: invalid syntax (<string>, line 1)
+2025-05-08T14:51:40.828522+00:00 | Query: mean of source power | Result: ERROR: invalid syntax (<string>, line 1)
+2025-05-08T14:57:22.679183+00:00 | Query: mean of Source Current | Result: ERROR: log_result() takes 3 positional arguments but 4 were given
+2025-05-08T14:59:02.078638+00:00 | Query: --show | Result: ERROR: name 'show' is not defined 
+2025-05-08T14:59:02.078638+00:00 | Query: --show | Result: ERROR: name 'show' is not defined 
+2025-05-08T14:59:02.078638+00:00 | Query: show | Result: ERROR: name 'show' is not defined 
+2025-05-08T14:59:02.078638+00:00 | Query: mean of Load Voltage | Result: ERROR: invalid syntax (<string>, line 1) 
+2025-05-08T14:59:02.078638+00:00 | Query: mean of Load Voltage | Result: ERROR: invalid syntax (<string>, line 1) 
+2025-05-08T14:59:02.078638+00:00 | Query: rms of RCD Clamp Current * Vout | Result: ERROR: name 'Vout' is not defined 
+2025-05-08T14:59:02.078638+00:00 | Query: --plot vout | Result: ERROR: invalid syntax (<string>, line 1) 

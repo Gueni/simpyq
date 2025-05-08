@@ -1,101 +1,726 @@
-Query,Intent,Entity
-min of input current,min,input current
-mean of load current,mean,load current
-min of input current,min,input current
-min of load voltage,min,load voltage
-average of current,average,current
-rms of battery voltage,rms,battery voltage
-sum of load current,sum,load current
-min of current,min,current
-mean of input current,mean,input current
-min of current,min,current
-sum of input current,sum,input current
-max of switch current,max,switch current
-max of switch current,max,switch current
-sum of switch current,sum,switch current
-average of load current,average,load current
-max of input current,max,input current
-min of load voltage,min,load voltage
-max of battery voltage,max,battery voltage
-min of load current,min,load current
-sum of battery voltage,sum,battery voltage
-max of switch current,max,switch current
-min of load voltage,min,load voltage
-average of current,average,current
-max of current,max,current
-max of load voltage,max,load voltage
-max of current,max,current
-sum of load voltage,sum,load voltage
-mean of load voltage,mean,load voltage
-max of battery voltage,max,battery voltage
-rms of load current,rms,load current
-average of load voltage,average,load voltage
-mean of input current,mean,input current
-mean of current,mean,current
-rms of load voltage,rms,load voltage
-mean of load current,mean,load current
-mean of battery voltage,mean,battery voltage
-rms of current,rms,current
-mean of load voltage,mean,load voltage
-max of switch current,max,switch current
-average of load voltage,average,load voltage
-max of switch current,max,switch current
-mean of current,mean,current
-sum of current,sum,current
-max of battery voltage,max,battery voltage
-max of battery voltage,max,battery voltage
-rms of load voltage,rms,load voltage
-average of load current,average,load current
-min of input current,min,input current
-min of input current,min,input current
-min of current,min,current
-mean of load voltage,mean,load voltage
-mean of input current,mean,input current
-min of battery voltage,min,battery voltage
-min of load current,min,load current
-sum of load voltage,sum,load voltage
-sum of load voltage,sum,load voltage
-rms of load voltage,rms,load voltage
-sum of battery voltage,sum,battery voltage
-rms of input current,rms,input current
-sum of load current,sum,load current
-max of battery voltage,max,battery voltage
-rms of current,rms,current
-min of current,min,current
-rms of current,rms,current
-rms of battery voltage,rms,battery voltage
-max of load current,max,load current
-average of switch current,average,switch current
-mean of load current,mean,load current
-max of input current,max,input current
-mean of current,mean,current
-sum of switch current,sum,switch current
-mean of current,mean,current
-average of input current,average,input current
-average of load current,average,load current
-average of load current,average,load current
-rms of load voltage,rms,load voltage
-sum of load current,sum,load current
-sum of battery voltage,sum,battery voltage
-min of load current,min,load current
-average of input current,average,input current
-max of current,max,current
-max of load current,max,load current
-sum of load current,sum,load current
-min of current,min,current
-max of input current,max,input current
-average of battery voltage,average,battery voltage
-mean of battery voltage,mean,battery voltage
-max of current,max,current
-min of current,min,current
-rms of switch current,rms,switch current
-rms of input current,rms,input current
-average of load current,average,load current
-average of switch current,average,switch current
-max of load current,max,load current
-sum of load voltage,sum,load voltage
-min of input current,min,input current
-sum of battery voltage,sum,battery voltage
-average of input current,average,input current
-mean of load voltage,mean,load voltage
-mean of switch current,mean,switch current
+Query,Intent
+sqrt of output voltage,sqrt
+div of input current,div
+median of switching frequency,median
+rms of load current,rms
+normalize of ambient temperature,normalize
+abs of input voltage,abs
+median of efficiency,median
+squared mean of reference voltage,squared
+average of switch current,average
+sqr of discharging current,sqr
+clip of duty cycle,clip
+exp of supply voltage,exp
+log of supply voltage,log
+abs of input power,abs
+average of reference voltage,average
+min of input voltage,min
+abs max of battery current,abs
+variance of supply voltage,variance
+normalize of load voltage,normalize
+std of inrush current,std
+variance of input power,variance
+average of drain voltage,average
+clip of output voltage,clip
+variance of gate voltage,variance
+div of efficiency,div
+clip of junction temperature,clip
+rms of output voltage,rms
+sqrt of load current,sqrt
+diff of output power,diff
+min of load voltage,min
+average of output power,average
+std of load voltage,std
+integral of output power,integral
+sum of power,sum
+peak-to-peak of input power,peak-to-peak
+log of battery voltage,log
+div of source voltage,div
+min of switch current,min
+integral of loss power,integral
+peak-to-peak of battery voltage,peak-to-peak
+min of battery voltage,min
+rms of input current,rms
+abs max of load voltage,abs
+derivative of reference voltage,derivative
+sqrt of switching frequency,sqrt
+peak-to-peak of load current,peak-to-peak
+sqrt of load voltage,sqrt
+variance of output voltage,variance
+min of frequency,min
+sqr of charging current,sqr
+rms of temperature,rms
+normalize of output current,normalize
+exp of power,exp
+abs max of ambient temperature,abs
+max of input power,max
+clip of frequency,clip
+log of power,log
+rms of switching frequency,rms
+abs min of output current,abs
+sqr of output power,sqr
+exp of junction temperature,exp
+mod of input power,mod
+mod of temperature,mod
+abs of loss power,abs
+peak-to-peak of load voltage,peak-to-peak
+diff of input voltage,diff
+exp of switching frequency,exp
+max of efficiency,max
+max of battery voltage,max
+clip of ambient temperature,clip
+abs min of input power,abs
+sum of source voltage,sum
+clip of battery current,clip
+squared mean of duty cycle,squared
+max of phase current,max
+sum of gate voltage,sum
+sum of discharging current,sum
+abs max of input current,abs
+rms of input voltage,rms
+max of frequency,max
+median of inrush current,median
+abs of efficiency,abs
+sqrt of junction temperature,sqrt
+mod of reference voltage,mod
+median of temperature,median
+log of input voltage,log
+max of loss power,max
+squared mean of switching frequency,squared
+normalize of source voltage,normalize
+median of charging current,median
+log of temperature,log
+mean of loss power,mean
+div of switching frequency,div
+diff of output voltage,diff
+log of switching frequency,log
+integral of power,integral
+std of duty cycle,std
+derivative of output power,derivative
+abs max of input power,abs
+mean of inrush current,mean
+rms of loss power,rms
+derivative of input voltage,derivative
+integral of frequency,integral
+mod of duty cycle,mod
+abs min of supply voltage,abs
+abs min of battery current,abs
+min of charging current,min
+mod of switching frequency,mod
+std of loss power,std
+std of gate voltage,std
+abs max of input voltage,abs
+abs max of duty cycle,abs
+average of input power,average
+diff of switch current,diff
+abs min of loss power,abs
+clip of discharging current,clip
+diff of power,diff
+median of junction temperature,median
+average of charging current,average
+clip of input voltage,clip
+sqr of load current,sqr
+sqr of output voltage,sqr
+std of charging current,std
+abs max of junction temperature,abs
+normalize of input power,normalize
+variance of frequency,variance
+min of ambient temperature,min
+div of phase current,div
+derivative of discharging current,derivative
+exp of input voltage,exp
+abs max of efficiency,abs
+integral of gate voltage,integral
+div of discharging current,div
+abs min of drain voltage,abs
+sqrt of input current,sqrt
+abs of switch current,abs
+mod of battery voltage,mod
+average of battery voltage,average
+abs min of discharging current,abs
+min of inrush current,min
+integral of inrush current,integral
+sqr of gate voltage,sqr
+exp of battery voltage,exp
+variance of input voltage,variance
+abs max of source voltage,abs
+peak-to-peak of input voltage,peak-to-peak
+derivative of load current,derivative
+average of temperature,average
+max of input current,max
+rms of gate voltage,rms
+max of junction temperature,max
+log of input current,log
+normalize of charging current,normalize
+sum of output voltage,sum
+max of load voltage,max
+average of discharging current,average
+mean of output voltage,mean
+exp of frequency,exp
+std of frequency,std
+normalize of switching frequency,normalize
+diff of load voltage,diff
+max of output current,max
+normalize of inrush current,normalize
+std of switching frequency,std
+derivative of gate voltage,derivative
+mod of output power,mod
+clip of efficiency,clip
+mod of input current,mod
+std of output current,std
+log of efficiency,log
+sqr of phase current,sqr
+min of phase current,min
+peak-to-peak of discharging current,peak-to-peak
+min of input current,min
+sum of input current,sum
+squared mean of supply voltage,squared
+variance of battery voltage,variance
+mod of ambient temperature,mod
+diff of output current,diff
+abs max of phase current,abs
+div of duty cycle,div
+median of ambient temperature,median
+mean of switch current,mean
+sum of reference voltage,sum
+exp of output voltage,exp
+abs of phase current,abs
+abs of gate voltage,abs
+diff of ambient temperature,diff
+rms of duty cycle,rms
+clip of reference voltage,clip
+min of output current,min
+diff of input current,diff
+diff of battery voltage,diff
+peak-to-peak of input current,peak-to-peak
+squared mean of charging current,squared
+sqr of power,sqr
+max of discharging current,max
+log of output power,log
+abs min of source voltage,abs
+exp of input power,exp
+sum of battery current,sum
+rms of junction temperature,rms
+mean of output power,mean
+rms of battery current,rms
+sqrt of battery voltage,sqrt
+mean of input current,mean
+exp of output power,exp
+mean of efficiency,mean
+sqr of input power,sqr
+average of frequency,average
+median of battery current,median
+div of loss power,div
+abs of junction temperature,abs
+mod of inrush current,mod
+derivative of junction temperature,derivative
+sum of drain voltage,sum
+std of reference voltage,std
+sqrt of discharging current,sqrt
+abs of source voltage,abs
+sqr of ambient temperature,sqr
+div of input power,div
+min of output voltage,min
+median of power,median
+max of switching frequency,max
+integral of ambient temperature,integral
+average of duty cycle,average
+peak-to-peak of source voltage,peak-to-peak
+sqr of supply voltage,sqr
+normalize of phase current,normalize
+sum of input power,sum
+squared mean of ambient temperature,squared
+median of frequency,median
+abs of battery current,abs
+sqr of output current,sqr
+abs min of reference voltage,abs
+sum of temperature,sum
+mean of switching frequency,mean
+abs min of power,abs
+sum of battery voltage,sum
+sqrt of efficiency,sqrt
+variance of load current,variance
+integral of charging current,integral
+integral of junction temperature,integral
+abs min of battery voltage,abs
+mod of supply voltage,mod
+average of switching frequency,average
+squared mean of battery voltage,squared
+abs min of output voltage,abs
+peak-to-peak of reference voltage,peak-to-peak
+normalize of efficiency,normalize
+sum of charging current,sum
+sqrt of source voltage,sqrt
+std of switch current,std
+median of input current,median
+peak-to-peak of temperature,peak-to-peak
+mean of source voltage,mean
+squared mean of output current,squared
+abs min of phase current,abs
+div of output current,div
+abs min of charging current,abs
+squared mean of drain voltage,squared
+log of load voltage,log
+clip of input power,clip
+exp of charging current,exp
+min of source voltage,min
+squared mean of output power,squared
+integral of switching frequency,integral
+exp of input current,exp
+mod of efficiency,mod
+exp of discharging current,exp
+clip of temperature,clip
+derivative of inrush current,derivative
+normalize of supply voltage,normalize
+normalize of temperature,normalize
+min of efficiency,min
+clip of supply voltage,clip
+std of discharging current,std
+abs min of efficiency,abs
+sum of frequency,sum
+sqrt of frequency,sqrt
+div of battery current,div
+clip of drain voltage,clip
+normalize of input current,normalize
+average of phase current,average
+max of load current,max
+mod of source voltage,mod
+variance of output power,variance
+clip of battery voltage,clip
+sum of loss power,sum
+abs min of switching frequency,abs
+div of temperature,div
+log of output current,log
+exp of efficiency,exp
+derivative of loss power,derivative
+integral of battery voltage,integral
+min of duty cycle,min
+variance of efficiency,variance
+abs of drain voltage,abs
+mean of junction temperature,mean
+variance of source voltage,variance
+derivative of switch current,derivative
+clip of output current,clip
+squared mean of load voltage,squared
+integral of input power,integral
+sqr of input voltage,sqr
+mod of loss power,mod
+integral of input current,integral
+sum of output power,sum
+abs max of load current,abs
+abs max of temperature,abs
+diff of input power,diff
+mod of drain voltage,mod
+div of load current,div
+rms of drain voltage,rms
+sqrt of output power,sqrt
+median of output voltage,median
+exp of ambient temperature,exp
+mean of discharging current,mean
+median of supply voltage,median
+average of load voltage,average
+log of duty cycle,log
+sum of input voltage,sum
+peak-to-peak of inrush current,peak-to-peak
+div of load voltage,div
+sqr of switch current,sqr
+average of loss power,average
+log of loss power,log
+div of junction temperature,div
+mean of temperature,mean
+derivative of charging current,derivative
+sqr of loss power,sqr
+squared mean of source voltage,squared
+sum of phase current,sum
+squared mean of load current,squared
+min of load current,min
+mod of output voltage,mod
+mod of frequency,mod
+max of inrush current,max
+diff of switching frequency,diff
+diff of drain voltage,diff
+max of gate voltage,max
+clip of inrush current,clip
+clip of load voltage,clip
+normalize of duty cycle,normalize
+squared mean of input current,squared
+std of junction temperature,std
+sum of switch current,sum
+integral of input voltage,integral
+mod of gate voltage,mod
+average of inrush current,average
+min of battery current,min
+std of output voltage,std
+std of load current,std
+normalize of input voltage,normalize
+mean of ambient temperature,mean
+rms of supply voltage,rms
+integral of drain voltage,integral
+normalize of power,normalize
+abs of output current,abs
+div of battery voltage,div
+abs of reference voltage,abs
+min of drain voltage,min
+log of charging current,log
+min of gate voltage,min
+log of switch current,log
+peak-to-peak of duty cycle,peak-to-peak
+sqr of junction temperature,sqr
+rms of reference voltage,rms
+abs of output power,abs
+log of reference voltage,log
+diff of battery current,diff
+max of battery current,max
+log of gate voltage,log
+integral of source voltage,integral
+diff of phase current,diff
+squared mean of switch current,squared
+rms of switch current,rms
+median of gate voltage,median
+std of battery voltage,std
+div of ambient temperature,div
+exp of duty cycle,exp
+log of input power,log
+peak-to-peak of ambient temperature,peak-to-peak
+exp of output current,exp
+abs max of frequency,abs
+squared mean of efficiency,squared
+mod of output current,mod
+abs min of input current,abs
+diff of frequency,diff
+sqrt of reference voltage,sqrt
+variance of temperature,variance
+abs min of switch current,abs
+rms of discharging current,rms
+max of duty cycle,max
+rms of output power,rms
+log of ambient temperature,log
+exp of battery current,exp
+abs max of switching frequency,abs
+peak-to-peak of charging current,peak-to-peak
+squared mean of temperature,squared
+exp of switch current,exp
+derivative of phase current,derivative
+mean of drain voltage,mean
+abs min of temperature,abs
+sqrt of temperature,sqrt
+abs max of drain voltage,abs
+variance of junction temperature,variance
+sqrt of phase current,sqrt
+mod of switch current,mod
+mean of input power,mean
+derivative of switching frequency,derivative
+median of input power,median
+integral of load voltage,integral
+sqrt of duty cycle,sqrt
+average of load current,average
+abs max of supply voltage,abs
+sum of efficiency,sum
+min of reference voltage,min
+min of input power,min
+clip of switching frequency,clip
+derivative of output current,derivative
+average of battery current,average
+mod of phase current,mod
+std of phase current,std
+sqrt of ambient temperature,sqrt
+exp of temperature,exp
+exp of source voltage,exp
+sqrt of switch current,sqrt
+squared mean of output voltage,squared
+derivative of load voltage,derivative
+log of source voltage,log
+abs of battery voltage,abs
+mean of load voltage,mean
+max of switch current,max
+median of switch current,median
+mean of reference voltage,mean
+peak-to-peak of loss power,peak-to-peak
+div of gate voltage,div
+abs max of inrush current,abs
+variance of discharging current,variance
+sum of output current,sum
+div of frequency,div
+std of battery current,std
+abs min of load current,abs
+diff of junction temperature,diff
+sqr of source voltage,sqr
+min of switching frequency,min
+abs of load voltage,abs
+exp of load current,exp
+log of junction temperature,log
+variance of loss power,variance
+mean of power,mean
+diff of inrush current,diff
+mod of battery current,mod
+rms of ambient temperature,rms
+abs of frequency,abs
+exp of loss power,exp
+mean of duty cycle,mean
+variance of input current,variance
+rms of phase current,rms
+derivative of ambient temperature,derivative
+peak-to-peak of efficiency,peak-to-peak
+max of ambient temperature,max
+derivative of power,derivative
+std of supply voltage,std
+max of reference voltage,max
+integral of switch current,integral
+sqrt of inrush current,sqrt
+abs of discharging current,abs
+sqrt of drain voltage,sqrt
+mean of frequency,mean
+sum of junction temperature,sum
+abs of duty cycle,abs
+variance of battery current,variance
+abs of charging current,abs
+div of reference voltage,div
+log of discharging current,log
+mod of charging current,mod
+clip of source voltage,clip
+div of drain voltage,div
+diff of gate voltage,diff
+normalize of battery voltage,normalize
+variance of output current,variance
+peak-to-peak of drain voltage,peak-to-peak
+sum of load current,sum
+exp of load voltage,exp
+median of load voltage,median
+diff of reference voltage,diff
+squared mean of power,squared
+sqr of battery voltage,sqr
+sqr of switching frequency,sqr
+std of input voltage,std
+clip of load current,clip
+abs min of duty cycle,abs
+squared mean of phase current,squared
+abs max of output power,abs
+clip of phase current,clip
+clip of output power,clip
+derivative of temperature,derivative
+min of junction temperature,min
+sqr of load voltage,sqr
+sum of duty cycle,sum
+std of drain voltage,std
+div of power,div
+average of supply voltage,average
+derivative of source voltage,derivative
+sqr of temperature,sqr
+sqr of input current,sqr
+peak-to-peak of frequency,peak-to-peak
+mean of output current,mean
+mod of load voltage,mod
+div of supply voltage,div
+abs max of reference voltage,abs
+average of junction temperature,average
+median of battery voltage,median
+average of source voltage,average
+squared mean of input power,squared
+squared mean of inrush current,squared
+integral of output voltage,integral
+min of output power,min
+diff of duty cycle,diff
+integral of phase current,integral
+sqr of inrush current,sqr
+max of drain voltage,max
+normalize of reference voltage,normalize
+average of output current,average
+log of inrush current,log
+median of source voltage,median
+normalize of frequency,normalize
+sqr of drain voltage,sqr
+derivative of battery voltage,derivative
+min of discharging current,min
+variance of power,variance
+variance of inrush current,variance
+mean of input voltage,mean
+abs min of junction temperature,abs
+normalize of load current,normalize
+std of source voltage,std
+mean of phase current,mean
+variance of reference voltage,variance
+max of output power,max
+std of input power,std
+max of source voltage,max
+variance of drain voltage,variance
+peak-to-peak of supply voltage,peak-to-peak
+log of phase current,log
+median of discharging current,median
+mod of input voltage,mod
+derivative of supply voltage,derivative
+median of loss power,median
+normalize of junction temperature,normalize
+normalize of drain voltage,normalize
+mod of discharging current,mod
+clip of gate voltage,clip
+std of temperature,std
+rms of inrush current,rms
+squared mean of discharging current,squared
+log of frequency,log
+integral of load current,integral
+integral of efficiency,integral
+abs of load current,abs
+abs max of charging current,abs
+variance of load voltage,variance
+variance of phase current,variance
+sqr of efficiency,sqr
+sqr of frequency,sqr
+abs of switching frequency,abs
+div of output power,div
+sqrt of output current,sqrt
+abs max of switch current,abs
+squared mean of loss power,squared
+integral of output current,integral
+sqrt of gate voltage,sqrt
+median of duty cycle,median
+mean of load current,mean
+abs max of battery voltage,abs
+diff of charging current,diff
+median of load current,median
+log of load current,log
+min of supply voltage,min
+mod of power,mod
+rms of frequency,rms
+sqr of duty cycle,sqr
+abs of supply voltage,abs
+exp of gate voltage,exp
+mean of gate voltage,mean
+diff of discharging current,diff
+sqr of battery current,sqr
+peak-to-peak of output voltage,peak-to-peak
+abs of temperature,abs
+log of battery current,log
+peak-to-peak of switch current,peak-to-peak
+abs max of power,abs
+peak-to-peak of phase current,peak-to-peak
+peak-to-peak of switching frequency,peak-to-peak
+abs min of frequency,abs
+integral of discharging current,integral
+mean of battery voltage,mean
+clip of switch current,clip
+sqrt of battery current,sqrt
+sum of load voltage,sum
+min of temperature,min
+integral of duty cycle,integral
+diff of efficiency,diff
+abs min of load voltage,abs
+sum of supply voltage,sum
+derivative of output voltage,derivative
+average of efficiency,average
+exp of phase current,exp
+normalize of discharging current,normalize
+abs of inrush current,abs
+derivative of input power,derivative
+squared mean of battery current,squared
+sqrt of input voltage,sqrt
+clip of power,clip
+peak-to-peak of battery current,peak-to-peak
+div of switch current,div
+rms of input power,rms
+rms of output current,rms
+mean of charging current,mean
+normalize of switch current,normalize
+derivative of duty cycle,derivative
+diff of supply voltage,diff
+squared mean of input voltage,squared
+normalize of output voltage,normalize
+median of reference voltage,median
+max of charging current,max
+clip of input current,clip
+min of loss power,min
+std of power,std
+variance of switching frequency,variance
+abs max of output current,abs
+normalize of gate voltage,normalize
+variance of duty cycle,variance
+peak-to-peak of output current,peak-to-peak
+integral of supply voltage,integral
+abs of ambient temperature,abs
+exp of reference voltage,exp
+diff of loss power,diff
+div of inrush current,div
+median of input voltage,median
+diff of load current,diff
+mean of supply voltage,mean
+abs max of loss power,abs
+min of power,min
+average of input voltage,average
+exp of inrush current,exp
+peak-to-peak of junction temperature,peak-to-peak
+median of drain voltage,median
+max of output voltage,max
+variance of switch current,variance
+max of temperature,max
+sqr of reference voltage,sqr
+median of output power,median
+average of ambient temperature,average
+median of phase current,median
+peak-to-peak of gate voltage,peak-to-peak
+sum of switching frequency,sum
+clip of charging current,clip
+diff of source voltage,diff
+rms of power,rms
+average of input current,average
+max of power,max
+div of output voltage,div
+squared mean of junction temperature,squared
+integral of temperature,integral
+integral of battery current,integral
+abs of output voltage,abs
+abs min of ambient temperature,abs
+sqrt of charging current,sqrt
+rms of load voltage,rms
+abs min of gate voltage,abs
+average of output voltage,average
+sqrt of loss power,sqrt
+variance of ambient temperature,variance
+abs min of output power,abs
+rms of source voltage,rms
+variance of charging current,variance
+abs min of input voltage,abs
+log of output voltage,log
+div of input voltage,div
+normalize of battery current,normalize
+sqrt of power,sqrt
+rms of efficiency,rms
+derivative of battery current,derivative
+max of input voltage,max
+mod of load current,mod
+sqrt of input power,sqrt
+peak-to-peak of output power,peak-to-peak
+std of output power,std
+abs max of gate voltage,abs
+sqrt of supply voltage,sqrt
+average of power,average
+abs of power,abs
+derivative of frequency,derivative
+mod of junction temperature,mod
+std of ambient temperature,std
+derivative of input current,derivative
+median of output current,median
+squared mean of frequency,squared
+integral of reference voltage,integral
+max of supply voltage,max
+sum of ambient temperature,sum
+diff of temperature,diff
+derivative of drain voltage,derivative
+clip of loss power,clip
+log of drain voltage,log
+abs max of output voltage,abs
+squared mean of gate voltage,squared
+mean of battery current,mean
+std of efficiency,std
+peak-to-peak of power,peak-to-peak
+normalize of loss power,normalize
+sum of inrush current,sum
+abs min of inrush current,abs
+derivative of efficiency,derivative
+exp of drain voltage,exp
+div of charging current,div
+average of gate voltage,average
+normalize of output power,normalize
+std of input current,std
+abs max of discharging current,abs
+rms of battery voltage,rms
+rms of charging current,rms
+abs of input current,abs

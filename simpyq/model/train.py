@@ -16,7 +16,7 @@ X_train_vec = vectorizer.fit_transform(X_train)
 X_test_vec = vectorizer.transform(X_test)
 
 # Train a logistic regression classifier
-clf = LogisticRegression(max_iter=1000)
+clf = LogisticRegression(max_iter=10000000)
 clf.fit(X_train_vec, y_train)
 
 # Evaluate the classifier
