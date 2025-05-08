@@ -1,6 +1,4 @@
-Got it! Here's the entire `README.md` as one continuous **copy-paste-friendly code snippet** inside a fenced markdown block:
 
-````markdown
 # simpyQ
 
 ![Banner](https://img.shields.io/badge/version-1.0-blue)
