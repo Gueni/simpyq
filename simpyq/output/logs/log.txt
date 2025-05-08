@@ -1,2 +1,0 @@
-[2025-05-07 20:45:34.566146] --help => Error: bad operand type for unary -: '_Helper'
-[2025-05-07 20:45:38.877787] help => Type help() for interactive help, or help(object) for help about object.

@@ -1,0 +1,101 @@
+Query,Intent,Entity
+min of input current,min,input current
+mean of load current,mean,load current
+min of input current,min,input current
+min of load voltage,min,load voltage
+average of current,average,current
+rms of battery voltage,rms,battery voltage
+sum of load current,sum,load current
+min of current,min,current
+mean of input current,mean,input current
+min of current,min,current
+sum of input current,sum,input current
+max of switch current,max,switch current
+max of switch current,max,switch current
+sum of switch current,sum,switch current
+average of load current,average,load current
+max of input current,max,input current
+min of load voltage,min,load voltage
+max of battery voltage,max,battery voltage
+min of load current,min,load current
+sum of battery voltage,sum,battery voltage
+max of switch current,max,switch current
+min of load voltage,min,load voltage
+average of current,average,current
+max of current,max,current
+max of load voltage,max,load voltage
+max of current,max,current
+sum of load voltage,sum,load voltage
+mean of load voltage,mean,load voltage
+max of battery voltage,max,battery voltage
+rms of load current,rms,load current
+average of load voltage,average,load voltage
+mean of input current,mean,input current
+mean of current,mean,current
+rms of load voltage,rms,load voltage
+mean of load current,mean,load current
+mean of battery voltage,mean,battery voltage
+rms of current,rms,current
+mean of load voltage,mean,load voltage
+max of switch current,max,switch current
+average of load voltage,average,load voltage
+max of switch current,max,switch current
+mean of current,mean,current
+sum of current,sum,current
+max of battery voltage,max,battery voltage
+max of battery voltage,max,battery voltage
+rms of load voltage,rms,load voltage
+average of load current,average,load current
+min of input current,min,input current
+min of input current,min,input current
+min of current,min,current
+mean of load voltage,mean,load voltage
+mean of input current,mean,input current
+min of battery voltage,min,battery voltage
+min of load current,min,load current
+sum of load voltage,sum,load voltage
+sum of load voltage,sum,load voltage
+rms of load voltage,rms,load voltage
+sum of battery voltage,sum,battery voltage
+rms of input current,rms,input current
+sum of load current,sum,load current
+max of battery voltage,max,battery voltage
+rms of current,rms,current
+min of current,min,current
+rms of current,rms,current
+rms of battery voltage,rms,battery voltage
+max of load current,max,load current
+average of switch current,average,switch current
+mean of load current,mean,load current
+max of input current,max,input current
+mean of current,mean,current
+sum of switch current,sum,switch current
+mean of current,mean,current
+average of input current,average,input current
+average of load current,average,load current
+average of load current,average,load current
+rms of load voltage,rms,load voltage
+sum of load current,sum,load current
+sum of battery voltage,sum,battery voltage
+min of load current,min,load current
+average of input current,average,input current
+max of current,max,current
+max of load current,max,load current
+sum of load current,sum,load current
+min of current,min,current
+max of input current,max,input current
+average of battery voltage,average,battery voltage
+mean of battery voltage,mean,battery voltage
+max of current,max,current
+min of current,min,current
+rms of switch current,rms,switch current
+rms of input current,rms,input current
+average of load current,average,load current
+average of switch current,average,switch current
+max of load current,max,load current
+sum of load voltage,sum,load voltage
+min of input current,min,input current
+sum of battery voltage,sum,battery voltage
+average of input current,average,input current
+mean of load voltage,mean,load voltage
+mean of switch current,mean,switch current

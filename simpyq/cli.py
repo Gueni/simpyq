@@ -1,89 +1,173 @@
 import argparse
-<<<<<<< HEAD
-from utils import show_banner, log_result
-from _io_ import load_csv, print_table
-from core import evaluate_expression
-=======
-import datetime
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import re, os, datetime
+import spacy
+from rich.console import Console
+from rich.table import Table
 from pyfiglet import Figlet
-from config import VERSION, AUTHOR
-from core import run_query
->>>>>>> 1253de11b126f9b1103a45177f5604a6a6c35ddf
 
-def run_cli():
-    # parser = argparse.ArgumentParser(description="Simpyq CLI")
-    # parser.add_argument("--csv", type=str, required=True, help="CSV file path")
-    # parser.add_argument("--tab", action="store_true", help="Show signal table and exit")
+console = Console()
+log_path = "D:/WORKSPACE/simpyq/simpyq/out/logs/"
+plots_path = "D:/WORKSPACE/simpyq/simpyq/out/plots/"
+utc_stamp = datetime.datetime.now(datetime.timezone.utc)
+# Units detection helper
+def guess_unit(signal_name):
+    name = signal_name.lower()
+    if "voltage" in name or "vout" in name or "v" in name:
+        return "[V]"
+    if "current" in name or "iout" in name or "a" in name:
+        return "[A]"
+    if "power" in name or "w" in name:
+        return "[W]"
+    if "temp" in name:
+        return "[°C]"
+    return "[unit]"
+# Math operations
+OPERATIONS = {
+    "mean": np.mean,
+    "average": np.mean,
+    "rms": lambda x: np.sqrt(np.mean(np.square(x))),
+    "std": np.std,
+    "variance": np.var,
+    "max": np.max,
+    "min": np.min,
+    "abs max": lambda x: np.max(np.abs(x)),
+    "abs min": lambda x: np.min(np.abs(x)),
+    "sum": np.sum,
+    "peak-to-peak": lambda x: np.ptp(x),
+    "median": np.median,
+    "integral": lambda x: np.trapz(x),
+    "squared mean": lambda x: np.mean(np.square(x)),
+    "derivative": lambda x: np.gradient(x),
+    "diff": np.diff,
+}
 
-<<<<<<< HEAD
-    # args = parser.parse_args()
-=======
-def parse_train_argument(train_arg):
-    parts = train_arg.split(' --op ')
-    if len(parts) != 2:
-        print("❌ Error: '--train' format should be 'query --op operation --sig signal1,signal2,...'")
-        return
+def get_nlp(signal_names):
+    nlp = spacy.load("en_core_web_trf")
+    patterns = [{"label": "ELECTRONIC_SIGNAL", "pattern": name} for name in signal_names]
+    ruler = nlp.add_pipe("entity_ruler", before="ner", config={"overwrite_ents": True})
+    ruler.add_patterns(patterns)
+    return nlp
 
-    query = parts[0].strip()
-    op_sig_parts = parts[1].split(' --sig ')
-    if len(op_sig_parts) != 2:
-        print("❌ Error: '--train' format should be 'query --op operation --sig signal1,signal2,...'")
-        return
+def print_banner():
+    figlet = Figlet(font="slant")
+    banner = figlet.renderText("simpyQ")
+    console.print(f"[bold cyan]{banner}[/bold cyan]")
+    console.print("Version 1.0 | Author: Mohamed Gueni | Purpose: Query and analyze simulation data\n")
 
-    op = op_sig_parts[0].strip()
-    signals = [s.strip() for s in op_sig_parts[1].split(',')]
-    
-    
-    print(f"✅ Training with new example:\n   ➤ Query: {query}\n   ➤ Operation: {op}\n   ➤ Signals: {signals}")
+def show_signals(df):
+    table = Table(title="Available Signals")
+    table.add_column("Index", style="cyan")
+    table.add_column("Signal Name", style="magenta")
+    for i, col in enumerate(df.columns):
+        table.add_row(str(i), col)
+    console.print(table)
+
+def process_query(df, query, nlp):
+    doc = nlp(query)
+    for sent in doc.sents:
+        ent_map = {}
+        for ent in sent.ents:
+            if ent.label_ == "ELECTRONIC_SIGNAL":
+                op = find_op(sent.text[:ent.start_char])
+                if op is None:
+                    raise ValueError(f"No operation specified for signal: {ent.text}")
+                signal = ent.text
+                if signal not in df.columns:
+                    raise ValueError(f"Signal '{signal}' not found.")
+                result = OPERATIONS[op](df[signal].dropna().values)
+                unit = guess_unit(signal)
+                query = query.replace(f"{op} of {signal}", f"{result:.16f} {unit}")
+    # Remove units before eval
+    query_numeric = re.sub(r"\[.*?\]", "", query)
+    final_result = eval(query_numeric)
+    return final_result, query
+
+def find_op(text):
+    for op in OPERATIONS:
+        if op in text.lower():
+            return op
+    return None
+
+def plot_signals(df, signal_names, start=None, end=None, utc_stamp=""):
+    os.makedirs(plots_path, exist_ok=True)
+    time = df.iloc[:, 0]
+    if start is not None and end is not None:
+        mask = (time >= start) & (time <= end)
+        time = time[mask]
+        df = df.loc[mask]
+
+    for signal in signal_names:
+        if signal not in df.columns:
+            console.print(f"[red]Signal {signal} not found.[/red]")
+            continue
+        plt.figure()
+        plt.plot(time, df[signal])
+        plt.xlabel("Time [s]")
+        plt.ylabel(f"{signal} {guess_unit(signal)}")
+        plt.title(f"{signal} vs Time")
+        filename = f"{plots_path}/{utc_stamp}_{signal.replace(' ', '_')}.png"
+        plt.savefig(filename)
+        plt.close()
+        console.print(f"[green]Saved plot:[/green] {filename}")
+
+def log_result(logfile, query, result):
+    os.makedirs(log_path, exist_ok=True)
+    with open(logfile, "a") as f:
+        f.write(f"{utc_stamp.isoformat()} | Query: {query} | Result: {result}\n")
 
 def main():
->>>>>>> 1253de11b126f9b1103a45177f5604a6a6c35ddf
-    show_banner()
-    path = input("Enter path to CSV file: ").strip()
-    df = load_csv(path)
-    print("CSV loaded. Type 'tab' to list signals. Type 'exit' to quit.\n")
-
-<<<<<<< HEAD
-    while True:
-        query = input(">>> ").strip()
-        if query == "exit":
-            break
-        elif query == "tab":
-            print_table(df)
-            continue
-
-        try:
-            result = evaluate_expression(query, df)
-            print("Result:", result)
-            log_result(query, result)
-        except Exception as e:
-            print("Error:", str(e))
-            log_result(query, f"Error: {str(e)}")
-=======
-    parser = argparse.ArgumentParser(description="Natural Language Signal Query Tool")
-    parser.add_argument("csv_file", nargs="?", help="Path to simulation CSV file")
-    parser.add_argument("--save", action="store_true", help="Auto-save plots to output/plots/")
-    parser.add_argument("--log", action="store_true", help="Log results to output/logs/log.txt")
-    parser.add_argument("-help", type=str, help="Help for a specific command")
-    parser.add_argument("--help_all", action="store_true", help="Help for all commands")
-    parser.add_argument("--train", type=str, help="Train with a new query (format: 'query --op operation --sig signal')")
-
+    parser = argparse.ArgumentParser(description="simpyq: Query CSV simulation data with natural language")
+    parser.add_argument("csv", help="Path to CSV file")
+    parser.add_argument("--show", action="store_true", help="Show signal names")
+    parser.add_argument("--plot", nargs="+", help="Plot one or more signals vs time")
+    parser.add_argument("--start", type=float, help="Start time for plotting")
+    parser.add_argument("--end", type=float, help="End time for plotting")
     args = parser.parse_args()
 
-    if args.help_all:
-        parser.print_help()
+    print_banner()
+
+    try:
+        df = pd.read_csv(args.csv)
+    except Exception as e:
+        console.print(f"[bold red]CSV loading error:[/bold red] {e}")
         return
 
-    if args.train:
-        parse_train_argument(args.train)
+    signal_names = df.columns.tolist()
+    nlp = get_nlp(signal_names)
+
+    if args.show:
+        show_signals(df)
         return
 
-    if args.csv_file:
-        run_query(args.csv_file, args.save, args.log)
-    else:
-        print("⚠️  No input provided.\n")
-        parser.print_help()
+    if args.plot:
+        try:
+            plot_signals(df, args.plot, args.start, args.end, utc_stamp)
+        except Exception as e:
+            console.print(f"[bold red]Plotting error:[/bold red] {e}")
+        return
+
+    # Interactive query loop
+    while True:
+        try:
+            user_input = input("\n[simpyq] Enter query (or type 'exit'): ").strip()
+            if user_input.lower() in ("exit", "quit"):
+                console.print("[bold cyan]Exiting simpyq. Goodbye![/bold cyan]")
+                break
+            if user_input == "":
+                continue
+            result, pretty_query = process_query(df, user_input, nlp)
+            console.print(f"[bold green]Result:[/bold green] {pretty_query} = [yellow]{result:.4f}[/yellow]")
+            log_result(f"{log_path}/querylog.log", user_input, result)
+        except KeyboardInterrupt:
+            console.print("\n[bold cyan]Exiting simpyq. Goodbye![/bold cyan]")
+            break
+        except Exception as e:
+            console.print(f"[bold red]Query error:[/bold red] {e}")
+            log_result(f"{log_path}/querylog_error.log", user_input, f"ERROR: {e}")
+
 
 if __name__ == "__main__":
     main()
->>>>>>> 1253de11b126f9b1103a45177f5604a6a6c35ddf

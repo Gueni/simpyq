@@ -1,0 +1,18 @@
+2025-05-08T14:21:04.182848 | Query: mean of Load Current * mean of Load voltage | Result: ERROR: invalid syntax (<string>, line 1)
+2025-05-08T14:21:21.392306 | Query: mean of Load Current * mean of Load Voltage | Result: ERROR: invalid syntax (<string>, line 1)
+2025-05-08T14:22:56.601356 | Query: mean of Source Voltage * mean of Source Power | Result: ERROR: invalid syntax (<string>, line 1)
+2025-05-08T14:24:28.547887 | Query: abs min of Source_Voltage | Result: ERROR: invalid syntax (<string>, line 1)
+2025-05-08T14:24:59.737701 | Query: abs min of Source_Voltage | Result: ERROR: invalid syntax (<string>, line 1)
+2025-05-08T14:26:37.910271 | Query: abs min of Source_Voltage | Result: ERROR: invalid syntax (<string>, line 1)
+2025-05-08T14:28:18.828492 | Query: abs min of Source_Voltage | Result: ERROR: Failed to evaluate query: invalid syntax (<string>, line 1)
+2025-05-08T14:29:08.943741+00:00 | Query: abs min of Source_Voltage | Result: ERROR: invalid syntax (<string>, line 1)
+2025-05-08T14:29:43.046942+00:00 | Query: abs_min of Source_Voltage | Result: ERROR: invalid syntax (<string>, line 1)
+2025-05-08T14:30:01.848375+00:00 | Query: abs_min  of Load Current * mean of Load1 | Result: ERROR: invalid syntax (<string>, line 1)
+2025-05-08T14:30:16.313161+00:00 | Query: abs_min of Load Current | Result: ERROR: invalid syntax (<string>, line 1)
+2025-05-08T14:35:34.906585+00:00 | Query: load current | Result: ERROR: invalid syntax (<string>, line 1)
+2025-05-08T14:35:34.906585+00:00 | Query: mean of load current | Result: ERROR: invalid syntax (<string>, line 1)
+2025-05-08T14:35:34.906585+00:00 | Query: "mean of load current " | Result: ERROR: Unknown format code 'f' for object of type 'str'
+2025-05-08T14:35:34.906585+00:00 | Query: "mean of Load Current" | Result: ERROR: Unknown format code 'f' for object of type 'str'
+2025-05-08T14:36:50.558304+00:00 | Query: "mean of Load Current" | Result: ERROR: Unknown format code 'f' for object of type 'str'
+2025-05-08T14:37:55.913703+00:00 | Query: sqrt(mean of Load Current) | Result: ERROR: name 'sqrt' is not defined
+2025-05-08T14:37:55.913703+00:00 | Query: rms Load Current | Result: ERROR: invalid syntax (<string>, line 1)
