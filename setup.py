@@ -6,7 +6,7 @@ setup(
     author="Mohamed Gueni",
     author_email="mohamedgueni@outlook.com",
     description="CLI tool to query and analyze simulation CSV data with natural language",
-    long_description=open("pypimd.md").read(),
+    long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/Gueni/simpyq",
     packages=find_packages(),

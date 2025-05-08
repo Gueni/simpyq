@@ -12,7 +12,7 @@ Analyze and visualize simulation data from CSV files using natural language quer
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Terminal-based CLI tool with live interactive mode  
 - Natural language processing of signal queries (e.g., `mean of Vout`)  
@@ -23,7 +23,7 @@ Analyze and visualize simulation data from CSV files using natural language quer
 
 ---
 
-## 📦 Installation
+##  Installation
 
 ```bash
 # Create environment (recommended)
@@ -40,7 +40,7 @@ python -m spacy download en_core_web_trf
 
 ---
 
-## 🧠 Usage
+##  Usage
 
 ```bash
 # Run in one-shot mode (process query then exit)
@@ -53,7 +53,7 @@ python simpyq/cli.py path/to/data.csv --show
 python simpyq/cli.py path/to/data.csv --plot Vout Iload --start 0.1 --end 0.9
 ```
 
-### 🔁 Interactive Mode
+###  Interactive Mode
 
 ```bash
 # Start interactive REPL
@@ -71,7 +71,7 @@ exit()
 
 ---
 
-## 🧪 Example Queries
+##  Example Queries
 
 | Query                           | Description                          |
 | ------------------------------- | ------------------------------------ |
@@ -84,7 +84,7 @@ exit()
 
 ---
 
-## 📂 Directory Structure
+##  Directory Structure
 
 ```
 simpyq/
@@ -99,7 +99,7 @@ simpyq/
 
 ---
 
-## 🧩 Supported Operations
+##  Supported Operations
 
 ```python
 OPERATIONS = {
@@ -124,7 +124,7 @@ OPERATIONS = {
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 - Loads CSV data and extracts signal names  
 - Injects them as named entities into the spaCy NLP pipeline  
@@ -134,7 +134,7 @@ OPERATIONS = {
 
 ---
 
-## 🛠️ NLP Training / Fine-tuning
+##  NLP Training / Fine-tuning
 
 You can customize the NLP model to better understand domain-specific expressions.
 
@@ -156,13 +156,13 @@ python -m spacy train config.cfg --output ./model --paths.train ./train.spacy --
 
 ---
 
-## 📋 License
+##  License
 
 GPL v3 License
 
 ---
 
-## 👋 Acknowledgments
+##  Acknowledgments
 
 Thanks to the open-source community and tools like:
 
