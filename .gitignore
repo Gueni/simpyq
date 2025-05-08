@@ -169,5 +169,4 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
-/d:/WORKSPACE/simpyq/simpyq/models/intent_model/checkpoint-3
-/d:/WORKSPACE/simpyq/simpyq/models/intent_model/model.safetensors
+
