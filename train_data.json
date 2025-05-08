@@ -1,0 +1,36 @@
+{
+    "queries": [
+        "mean source voltage",
+        "rms load current",
+        "plot vout",
+        "max current",
+        "integrate signal"
+    ],
+    "labels": [
+        "mean",
+        "rms",
+        "plot",
+        "max",
+        "integr"
+    ],
+    "label_to_id": {
+        "mean": 0,
+        "rms": 1,
+        "plot": 2,
+        "max": 3,
+        "min": 4,
+        "abs max": 5,
+        "abs min": 6,
+        "integr": 7,
+        "derive": 8,
+        "sqrt": 9,
+        "sqr": 10,
+        "*": 11,
+        "+": 12,
+        "-": 13,
+        "/": 14,
+        "div": 15,
+        "mod": 16
+    }
+    
+}
