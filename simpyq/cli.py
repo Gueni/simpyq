@@ -12,6 +12,7 @@ console = Console()
 log_path = "D:/WORKSPACE/simpyq/simpyq/out/logs/"
 plots_path = "D:/WORKSPACE/simpyq/simpyq/out/plots/"
 utc_stamp = datetime.datetime.now(datetime.timezone.utc)
+
 # Units detection helper
 def guess_unit(signal_name):
     name = signal_name.lower()
@@ -24,6 +25,7 @@ def guess_unit(signal_name):
     if "temp" in name:
         return "[°C]"
     return "[unit]"
+
 # Math operations
 OPERATIONS = {
     "mean": np.mean,
@@ -53,9 +55,16 @@ def get_nlp(signal_names):
 
 def print_banner():
     figlet = Figlet(font="slant")
-    banner = figlet.renderText("simpyQ")
+    line = figlet.renderText(".............................")
+    banner = figlet.renderText("    simpyQ")
+    console.print(f"    [bold cyan]{line}[/bold cyan]")
     console.print(f"[bold cyan]{banner}[/bold cyan]")
-    console.print("Version 1.0 | Author: Mohamed Gueni | Purpose: Query and analyze simulation data\n")
+    console.print("      Purpose: Query and analyze simulation data\n")
+    console.print("      Author: Mohamed Gueni\n")
+    console.print("      Version 1.0\n")
+    console.print("      Licence:     GPL v3 License (Refer to the LICENSE file) \n")
+    console.print("      Created:     05/08/2025")
+    console.print(f"[bold cyan]{line}[/bold cyan]")
 
 def show_signals(df):
     table = Table(title="Available Signals")
