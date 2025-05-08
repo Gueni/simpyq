@@ -25,3 +25,13 @@
 2025-05-08T14:59:02.078638+00:00 | Query: mean of Load Voltage | Result: ERROR: invalid syntax (<string>, line 1) 
 2025-05-08T14:59:02.078638+00:00 | Query: rms of RCD Clamp Current * Vout | Result: ERROR: name 'Vout' is not defined 
 2025-05-08T14:59:02.078638+00:00 | Query: --plot vout | Result: ERROR: invalid syntax (<string>, line 1) 
+2025-05-08T15:52:54.894455+00:00 | Query: --plot Vout --start 0.1 --end 0.9 | Result: ERROR: No operation specified for signal: Vout 
+2025-05-08T15:52:54.894455+00:00 | Query: plot Vout --start 0.1 --end 0.9 | Result: ERROR: No operation specified for signal: Vout 
+2025-05-08T15:52:54.894455+00:00 | Query: plot Load Current --start 0.1 --end 0.9 | Result: ERROR: No operation specified for signal: Load Current 
+2025-05-08T15:52:54.894455+00:00 | Query: plot Load Current | Result: ERROR: No operation specified for signal: Load Current 
+2025-05-08T15:52:54.894455+00:00 | Query: mean of vout | Result: ERROR: invalid syntax (<string>, line 1) 
+2025-05-08T15:52:54.894455+00:00 | Query: plot of Vout | Result: ERROR: No operation specified for signal: Vout 
+20250508_155903 | Query: plot of Vout | Result: ERROR: No operation specified for signal: Vout 
+20250508_155903 | Query: plot of Vout | Result: ERROR: No operation specified for signal: Vout 
+20250508_155903 | Query: rms of Iin | Result: ERROR: invalid syntax (<string>, line 1) 
+20250508_155903 | Query: (mean of Vout) + (rms of Iload) / 2 | Result: ERROR: invalid syntax. Perhaps you forgot a comma? (<string>, line 1) 

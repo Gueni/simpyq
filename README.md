@@ -8,8 +8,7 @@
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
 > CLI tool for querying simulation CSV data using natural language.
 
-**Author:** Mohamed Gueni  
-**Purpose:** Analyze and visualize simulation data from CSV files using natural language queries interpreted via spaCy and a rule-enhanced NLP pipeline.
+Analyze and visualize simulation data from CSV files using natural language queries interpreted via spaCy and a rule-enhanced NLP pipeline.
 
 ---
 

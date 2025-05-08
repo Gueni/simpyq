@@ -11,7 +11,7 @@ from pyfiglet import Figlet
 console = Console()
 log_path = "D:/WORKSPACE/simpyq/simpyq/out/logs/"
 plots_path = "D:/WORKSPACE/simpyq/simpyq/out/plots/"
-utc_stamp = datetime.datetime.now(datetime.timezone.utc)
+utc_stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d_%H%M%S")
 
 # Units detection helper
 def guess_unit(signal_name):
@@ -125,7 +125,7 @@ def plot_signals(df, signal_names, start=None, end=None, utc_stamp=""):
 def log_result(logfile, query, result,unit = ""):
     os.makedirs(log_path, exist_ok=True)
     with open(logfile, "a") as f:
-        f.write(f"{utc_stamp.isoformat()} | Query: {query} | Result: {result} {unit}\n")
+        f.write(f"{utc_stamp} | Query: {query} | Result: {result} {unit}\n")
 
 def main():
     parser = argparse.ArgumentParser(description="simpyq: Query CSV simulation data with natural language")

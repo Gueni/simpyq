@@ -2,3 +2,5 @@
 2025-05-08T14:59:02.078638+00:00 | Query: mean of RCD Clamp Current | Result: 0.1782889102946197 [A]
 2025-05-08T14:59:02.078638+00:00 | Query: rms of RCD Clamp Current | Result: 0.7678851800407928 [A]
 2025-05-08T14:59:02.078638+00:00 | Query: rms of RCD Clamp Current * mean of Vout | Result: 9.174207853925516 [V]
+2025-05-08T15:52:54.894455+00:00 | Query: mean of Vout | Result: 11.947369336439271 [V]
+20250508_155903 | Query: mean of Vout | Result: 11.947369336439271 [V]
