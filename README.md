@@ -36,6 +36,8 @@ pip install -r requirements.txt
 # Or install manually
 pip install pandas numpy matplotlib rich pyfiglet spacy
 python -m spacy download en_core_web_trf
+
+or if you have Spacy already installed then : pip install simpyq
 ```
 
 ---
