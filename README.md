@@ -26,6 +26,19 @@ Analyze and visualize simulation data from CSV files using natural language quer
 ##  Installation
 
 Note : you need to have Spacy installed on your machine before installing.
+## 🧠 spaCy Setup (Required Before Using `simpyq`)
+
+Before installing and using the `simpyq` CLI tool, you need to install [spaCy](https://spacy.io/usage) along with its transformer-based English language model.
+
+### 1. Install spaCy (choose **CPU** or **CUDA** based on your system):
+
+**For CPU-only systems:**
+```bash
+pip install -U pip setuptools wheel
+pip install -U 'spacy[cuda11x]'
+python -m spacy download en_core_web_trf
+
+
 
 ```bash
 # Create environment (recommended)
