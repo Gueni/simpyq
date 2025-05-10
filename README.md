@@ -1,7 +1,7 @@
 
 # simpyQ
 
-![Banner](https://img.shields.io/badge/version-1.0-blue)
+![Banner](https://img.shields.io/badge/version-1.0.2-blue)
 ![python3.x](https://img.shields.io/badge/python-3.x-brightgreen.svg)
 [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](http://ansicolortags.readthedocs.io/?badge=latest)
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
