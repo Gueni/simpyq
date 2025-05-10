@@ -1,0 +1,1197 @@
+Query,Intent
+median of frequency,median
+sqrt of frequency,sqrt
+exp of phase current,exp
+std of SourceCurrent,std
+std of RCDClampDissipation,std
+max of loss power,max
+peak of efficiency,peak
+clip of charging current,clip
+div of duty cycle,div
+abs of PrimaryWindingCurrent,abs
+mean of RCDClampCurrent,mean
+diff of input voltage,diff
+squared mean of source voltage,squared
+peak-to-peak of battery current,peak-to-peak
+variance of output voltage,variance
+peak of gate voltage,peak
+variance of loss power,variance
+abs of phase current,abs
+sqrt of switching frequency,sqrt
+abs of power,abs
+div of temperature,div
+sqr of inrush current,sqr
+mod of switch current,mod
+abs max of PrimaryWindingCurrent,abs
+sum of duty cycle,sum
+mean of SecondaryWindingCurrent,mean
+sum of switch current,sum
+abs min of output voltage,abs
+normalize of SourcePower,normalize
+squared mean of input voltage,squared
+integral of charging current,integral
+diff of RCDClampVoltage,diff
+abs max of reference voltage,abs
+max of drain voltage,max
+average of loss power,average
+std of power,std
+sqr of MOSFETCurrent,sqr
+div of input voltage,div
+derivative of reference voltage,derivative
+squared mean of PrimaryWindingvoltage,squared
+squared mean of discharging current,squared
+log of battery voltage,log
+log of junction temperature,log
+std of charging current,std
+std of RCDClampVoltage,std
+integral of reference voltage,integral
+mean of PrimaryWindingvoltage,mean
+log of RCDClampCurrent,log
+sqr of LoadCurrent,sqr
+abs max of SecondaryWindingCurrent,abs
+median of gate voltage,median
+normalize of inrush current,normalize
+average of switching frequency,average
+variance of load voltage,variance
+clip of LoadCurrent,clip
+abs of MOSFETjunctionTemp,abs
+exp of switching frequency,exp
+abs min of load current,abs
+log of temperature,log
+log of supply voltage,log
+std of SecondaryWindingCurrent,std
+squared mean of supply voltage,squared
+average of SourcePower,average
+peak of load voltage,peak
+clip of power,clip
+div of frequency,div
+normalize of switching frequency,normalize
+clip of input current,clip
+sqrt of reference voltage,sqrt
+div of Source_Voltage,div
+log of load current,log
+std of source voltage,std
+exp of power,exp
+integral of RCDClampVoltage,integral
+log of SourceCurrent,log
+integral of SourceCurrent,integral
+diff of input power,diff
+sqrt of temperature,sqrt
+variance of source voltage,variance
+rms of output current,rms
+min of RCDClampVoltage,min
+abs of discharging current,abs
+clip of MOSFETvoltage,clip
+peak of battery voltage,peak
+integral of SourcePower,integral
+variance of switch current,variance
+median of input voltage,median
+median of battery current,median
+average of input power,average
+normalize of PrimaryWindingCurrent,normalize
+squared mean of MOSFETvoltage,squared
+exp of duty cycle,exp
+exp of input power,exp
+squared mean of battery current,squared
+div of source voltage,div
+average of SourceCurrent,average
+average of temperature,average
+diff of switching frequency,diff
+log of MOSFETvoltage,log
+sum of loss power,sum
+clip of SourcePower,clip
+peak-to-peak of LoadPower,peak-to-peak
+normalize of phase current,normalize
+derivative of input power,derivative
+div of MOSFETCurrent,div
+squared mean of efficiency,squared
+sqr of temperature,sqr
+sum of RCDClampVoltage,sum
+diff of battery voltage,diff
+mean of RCDClampVoltage,mean
+abs min of frequency,abs
+diff of inrush current,diff
+mean of supply voltage,mean
+abs max of battery current,abs
+abs max of phase current,abs
+normalize of gate voltage,normalize
+integral of input voltage,integral
+sqr of ambient temperature,sqr
+squared mean of charging current,squared
+log of SecondaryWindingvoltage,log
+sqr of load voltage,sqr
+log of reference voltage,log
+exp of PrimaryWindingCurrent,exp
+median of switching frequency,median
+mean of efficiency,mean
+diff of MOSFETjunctionTemp,diff
+exp of SecondaryWindingCurrent,exp
+peak of discharging current,peak
+variance of drain voltage,variance
+peak of PrimaryWindingCurrent,peak
+mean of switching frequency,mean
+mod of junction temperature,mod
+rms of LoadCurrent,rms
+sum of input voltage,sum
+sum of load voltage,sum
+squared mean of phase current,squared
+diff of input current,diff
+peak of battery current,peak
+sum of discharging current,sum
+sqrt of battery voltage,sqrt
+max of output current,max
+sum of inrush current,sum
+sum of efficiency,sum
+average of phase current,average
+median of SourceCurrent,median
+clip of input voltage,clip
+normalize of efficiency,normalize
+div of SourcePower,div
+abs max of battery voltage,abs
+integral of duty cycle,integral
+std of input current,std
+average of ambient temperature,average
+mean of frequency,mean
+rms of power,rms
+integral of MOSFETjunctionTemp,integral
+peak of loss power,peak
+derivative of junction temperature,derivative
+diff of duty cycle,diff
+derivative of supply voltage,derivative
+std of Time,std
+exp of SourcePower,exp
+sum of SourcePower,sum
+mod of inrush current,mod
+std of frequency,std
+abs min of reference voltage,abs
+max of SecondaryWindingvoltage,max
+integral of output voltage,integral
+abs of input current,abs
+integral of temperature,integral
+mod of battery voltage,mod
+min of output voltage,min
+sum of output current,sum
+mod of efficiency,mod
+div of Time,div
+mod of temperature,mod
+average of input current,average
+clip of RCDClampVoltage,clip
+variance of discharging current,variance
+derivative of drain voltage,derivative
+normalize of LoadPower,normalize
+sqr of switch current,sqr
+mod of battery current,mod
+div of junction temperature,div
+std of output current,std
+diff of gate voltage,diff
+min of SourcePower,min
+exp of charging current,exp
+sqr of discharging current,sqr
+clip of reference voltage,clip
+mod of MOSFETjunctionTemp,mod
+sqrt of LoadCurrent,sqrt
+log of switch current,log
+peak of load current,peak
+abs min of inrush current,abs
+rms of battery current,rms
+div of power,div
+max of switching frequency,max
+average of frequency,average
+peak-to-peak of discharging current,peak-to-peak
+squared mean of SourcePower,squared
+abs max of switch current,abs
+max of RCDClampVoltage,max
+normalize of RCDClampDissipation,normalize
+clip of gate voltage,clip
+mean of discharging current,mean
+abs min of RCDClampCurrent,abs
+min of duty cycle,min
+min of PrimaryWindingCurrent,min
+max of PrimaryWindingCurrent,max
+peak-to-peak of load current,peak-to-peak
+abs of SourceCurrent,abs
+abs min of efficiency,abs
+abs min of SourceCurrent,abs
+derivative of RCDClampCurrent,derivative
+variance of input current,variance
+mean of input voltage,mean
+exp of SecondaryWindingvoltage,exp
+mod of reference voltage,mod
+mod of LoadPower,mod
+sqr of RCDClampDissipation,sqr
+exp of loss power,exp
+variance of inrush current,variance
+min of LoadCurrent,min
+min of SecondaryWindingCurrent,min
+div of switching frequency,div
+mean of SourceCurrent,mean
+div of drain voltage,div
+median of load current,median
+derivative of charging current,derivative
+sqr of switching frequency,sqr
+squared mean of reference voltage,squared
+exp of Source_Voltage,exp
+median of MOSFETjunctionTemp,median
+squared mean of RCDClampCurrent,squared
+peak-to-peak of Time,peak-to-peak
+integral of input current,integral
+sqr of drain voltage,sqr
+normalize of charging current,normalize
+integral of battery current,integral
+rms of SecondaryWindingCurrent,rms
+min of input voltage,min
+integral of Load1,integral
+sqrt of input power,sqrt
+sum of Source_Voltage,sum
+peak-to-peak of inrush current,peak-to-peak
+min of MOSFETvoltage,min
+rms of discharging current,rms
+average of battery current,average
+abs min of source voltage,abs
+average of RCDClampVoltage,average
+peak of input current,peak
+sum of RCDClampDissipation,sum
+sqrt of output current,sqrt
+max of charging current,max
+derivative of output power,derivative
+min of battery current,min
+max of SourcePower,max
+max of efficiency,max
+average of power,average
+sqr of duty cycle,sqr
+diff of SecondaryWindingvoltage,diff
+variance of MOSFETvoltage,variance
+div of load voltage,div
+std of duty cycle,std
+abs of battery current,abs
+sqrt of Load1,sqrt
+sum of PrimaryWindingvoltage,sum
+max of RCDClampDissipation,max
+clip of drain voltage,clip
+average of switch current,average
+median of battery voltage,median
+median of RCDClampVoltage,median
+peak of input voltage,peak
+sum of charging current,sum
+mod of input voltage,mod
+median of output current,median
+exp of drain voltage,exp
+sqrt of switch current,sqrt
+integral of RCDClampCurrent,integral
+sum of MOSFETvoltage,sum
+rms of MOSFETCurrent,rms
+abs of switch current,abs
+clip of LoadPower,clip
+peak of MOSFETjunctionTemp,peak
+log of source voltage,log
+squared mean of SourceCurrent,squared
+min of reference voltage,min
+abs of SourcePower,abs
+squared mean of LoadPower,squared
+rms of PrimaryWindingvoltage,rms
+abs min of RCDClampDissipation,abs
+rms of duty cycle,rms
+exp of source voltage,exp
+peak-to-peak of junction temperature,peak-to-peak
+clip of phase current,clip
+abs max of SourceCurrent,abs
+average of junction temperature,average
+exp of efficiency,exp
+abs of temperature,abs
+sum of PrimaryWindingCurrent,sum
+sqrt of loss power,sqrt
+log of MOSFETCurrent,log
+rms of supply voltage,rms
+sqrt of charging current,sqrt
+mean of power,mean
+rms of charging current,rms
+variance of reference voltage,variance
+clip of output voltage,clip
+max of input current,max
+average of LoadCurrent,average
+sum of Time,sum
+mean of ambient temperature,mean
+integral of junction temperature,integral
+div of RCDClampVoltage,div
+normalize of junction temperature,normalize
+sqrt of discharging current,sqrt
+average of output power,average
+min of frequency,min
+mod of PrimaryWindingCurrent,mod
+peak-to-peak of LoadCurrent,peak-to-peak
+abs min of junction temperature,abs
+min of LoadPower,min
+sum of phase current,sum
+sqrt of input current,sqrt
+std of battery current,std
+rms of input current,rms
+min of RCDClampDissipation,min
+diff of RCDClampCurrent,diff
+log of power,log
+integral of inrush current,integral
+log of input current,log
+div of SecondaryWindingCurrent,div
+variance of LoadCurrent,variance
+max of phase current,max
+integral of PrimaryWindingvoltage,integral
+peak-to-peak of efficiency,peak-to-peak
+mod of RCDClampDissipation,mod
+peak-to-peak of RCDClampCurrent,peak-to-peak
+rms of source voltage,rms
+rms of phase current,rms
+rms of battery voltage,rms
+abs max of charging current,abs
+abs of junction temperature,abs
+median of inrush current,median
+average of load voltage,average
+min of SourceCurrent,min
+sqr of SourcePower,sqr
+integral of gate voltage,integral
+sqr of power,sqr
+diff of reference voltage,diff
+squared mean of LoadCurrent,squared
+peak-to-peak of Source_Voltage,peak-to-peak
+peak of SourcePower,peak
+abs min of Source_Voltage,abs
+squared mean of Time,squared
+derivative of MOSFETjunctionTemp,derivative
+abs max of MOSFETvoltage,abs
+sum of SourceCurrent,sum
+median of switch current,median
+average of SecondaryWindingCurrent,average
+squared mean of frequency,squared
+peak-to-peak of power,peak-to-peak
+abs min of SecondaryWindingCurrent,abs
+max of Time,max
+abs max of discharging current,abs
+abs min of PrimaryWindingCurrent,abs
+clip of efficiency,clip
+peak of LoadPower,peak
+peak of output current,peak
+max of frequency,max
+exp of Time,exp
+peak of LoadCurrent,peak
+abs max of input voltage,abs
+sqr of efficiency,sqr
+min of input power,min
+abs max of power,abs
+median of SourcePower,median
+min of power,min
+variance of output current,variance
+variance of charging current,variance
+abs min of charging current,abs
+average of MOSFETvoltage,average
+sum of switching frequency,sum
+max of ambient temperature,max
+derivative of output voltage,derivative
+rms of ambient temperature,rms
+diff of output power,diff
+mod of gate voltage,mod
+log of frequency,log
+mod of load current,mod
+mean of junction temperature,mean
+derivative of RCDClampDissipation,derivative
+derivative of PrimaryWindingvoltage,derivative
+diff of power,diff
+abs max of input power,abs
+peak of PrimaryWindingvoltage,peak
+mod of output power,mod
+abs min of output current,abs
+abs of output voltage,abs
+mean of source voltage,mean
+abs max of source voltage,abs
+squared mean of Source_Voltage,squared
+min of switching frequency,min
+sqr of Load1,sqr
+variance of supply voltage,variance
+average of source voltage,average
+diff of Load1,diff
+average of output current,average
+median of load voltage,median
+clip of battery current,clip
+sqrt of source voltage,sqrt
+log of gate voltage,log
+sum of reference voltage,sum
+std of inrush current,std
+squared mean of output power,squared
+rms of SecondaryWindingvoltage,rms
+sqrt of supply voltage,sqrt
+variance of efficiency,variance
+abs min of battery voltage,abs
+log of discharging current,log
+median of duty cycle,median
+variance of input power,variance
+log of load voltage,log
+integral of SecondaryWindingCurrent,integral
+squared mean of gate voltage,squared
+max of output power,max
+div of battery current,div
+std of battery voltage,std
+sqrt of power,sqrt
+derivative of input voltage,derivative
+abs max of output voltage,abs
+sqr of supply voltage,sqr
+abs max of efficiency,abs
+div of reference voltage,div
+abs min of temperature,abs
+diff of SecondaryWindingCurrent,diff
+abs max of input current,abs
+sqr of RCDClampCurrent,sqr
+sqr of load current,sqr
+min of loss power,min
+integral of MOSFETvoltage,integral
+diff of PrimaryWindingvoltage,diff
+max of battery current,max
+std of efficiency,std
+average of PrimaryWindingvoltage,average
+log of input power,log
+variance of gate voltage,variance
+abs min of battery current,abs
+normalize of load current,normalize
+normalize of reference voltage,normalize
+max of junction temperature,max
+median of RCDClampDissipation,median
+average of charging current,average
+div of RCDClampCurrent,div
+std of MOSFETjunctionTemp,std
+diff of output voltage,diff
+std of load voltage,std
+abs max of SecondaryWindingvoltage,abs
+mod of supply voltage,mod
+diff of drain voltage,diff
+average of efficiency,average
+sum of Load1,sum
+normalize of SecondaryWindingCurrent,normalize
+integral of RCDClampDissipation,integral
+abs min of power,abs
+div of gate voltage,div
+abs of SecondaryWindingvoltage,abs
+variance of SecondaryWindingCurrent,variance
+integral of loss power,integral
+rms of RCDClampCurrent,rms
+rms of MOSFETvoltage,rms
+mod of load voltage,mod
+sqr of phase current,sqr
+normalize of ambient temperature,normalize
+integral of MOSFETCurrent,integral
+max of inrush current,max
+max of LoadPower,max
+mod of source voltage,mod
+normalize of SecondaryWindingvoltage,normalize
+mean of load voltage,mean
+clip of output current,clip
+std of MOSFETvoltage,std
+rms of junction temperature,rms
+peak-to-peak of RCDClampDissipation,peak-to-peak
+sqrt of SecondaryWindingCurrent,sqrt
+std of switching frequency,std
+abs of RCDClampCurrent,abs
+abs max of PrimaryWindingvoltage,abs
+peak-to-peak of input power,peak-to-peak
+sqrt of junction temperature,sqrt
+squared mean of junction temperature,squared
+integral of battery voltage,integral
+abs max of drain voltage,abs
+variance of RCDClampDissipation,variance
+peak of RCDClampDissipation,peak
+sqr of PrimaryWindingvoltage,sqr
+log of drain voltage,log
+average of MOSFETjunctionTemp,average
+diff of temperature,diff
+derivative of gate voltage,derivative
+abs max of gate voltage,abs
+normalize of Source_Voltage,normalize
+sum of junction temperature,sum
+derivative of SourcePower,derivative
+sum of ambient temperature,sum
+squared mean of MOSFETCurrent,squared
+rms of drain voltage,rms
+integral of discharging current,integral
+integral of PrimaryWindingCurrent,integral
+variance of temperature,variance
+std of PrimaryWindingvoltage,std
+peak-to-peak of SourceCurrent,peak-to-peak
+average of MOSFETCurrent,average
+abs max of loss power,abs
+variance of input voltage,variance
+abs min of SecondaryWindingvoltage,abs
+sum of output power,sum
+normalize of Load1,normalize
+derivative of PrimaryWindingCurrent,derivative
+peak-to-peak of PrimaryWindingCurrent,peak-to-peak
+diff of SourceCurrent,diff
+min of junction temperature,min
+log of inrush current,log
+variance of MOSFETCurrent,variance
+variance of MOSFETjunctionTemp,variance
+sqrt of MOSFETjunctionTemp,sqrt
+diff of switch current,diff
+abs min of input power,abs
+peak-to-peak of battery voltage,peak-to-peak
+sum of supply voltage,sum
+log of efficiency,log
+sqr of input voltage,sqr
+peak of Time,peak
+rms of temperature,rms
+abs min of Time,abs
+abs of LoadCurrent,abs
+diff of Time,diff
+std of LoadCurrent,std
+squared mean of Load1,squared
+derivative of SecondaryWindingCurrent,derivative
+rms of reference voltage,rms
+abs min of LoadCurrent,abs
+mod of input current,mod
+normalize of LoadCurrent,normalize
+average of discharging current,average
+median of input power,median
+rms of load current,rms
+rms of SourcePower,rms
+variance of switching frequency,variance
+squared mean of RCDClampDissipation,squared
+log of output power,log
+clip of PrimaryWindingvoltage,clip
+sqrt of efficiency,sqrt
+variance of LoadPower,variance
+sqrt of duty cycle,sqrt
+div of output current,div
+min of PrimaryWindingvoltage,min
+peak of phase current,peak
+abs of frequency,abs
+rms of switch current,rms
+abs of PrimaryWindingvoltage,abs
+abs min of MOSFETvoltage,abs
+log of LoadCurrent,log
+max of gate voltage,max
+max of input voltage,max
+min of supply voltage,min
+integral of LoadCurrent,integral
+abs max of switching frequency,abs
+sqr of source voltage,sqr
+max of Load1,max
+clip of Time,clip
+exp of reference voltage,exp
+average of Time,average
+peak of Source_Voltage,peak
+exp of input current,exp
+abs max of output power,abs
+mean of charging current,mean
+diff of LoadCurrent,diff
+abs min of SourcePower,abs
+variance of power,variance
+abs of MOSFETvoltage,abs
+div of output voltage,div
+log of SourcePower,log
+log of charging current,log
+sqrt of PrimaryWindingCurrent,sqrt
+abs max of load current,abs
+std of MOSFETCurrent,std
+squared mean of SecondaryWindingvoltage,squared
+peak-to-peak of switching frequency,peak-to-peak
+median of efficiency,median
+max of MOSFETvoltage,max
+clip of SecondaryWindingCurrent,clip
+div of input power,div
+peak of switch current,peak
+integral of Time,integral
+variance of PrimaryWindingCurrent,variance
+log of duty cycle,log
+integral of LoadPower,integral
+rms of MOSFETjunctionTemp,rms
+min of temperature,min
+normalize of RCDClampVoltage,normalize
+abs of load voltage,abs
+mod of output current,mod
+median of PrimaryWindingCurrent,median
+sqrt of RCDClampDissipation,sqrt
+abs of input voltage,abs
+diff of Source_Voltage,diff
+sqr of charging current,sqr
+average of PrimaryWindingCurrent,average
+median of charging current,median
+mod of duty cycle,mod
+sqr of battery voltage,sqr
+clip of load voltage,clip
+max of input power,max
+clip of switching frequency,clip
+sum of RCDClampCurrent,sum
+mean of switch current,mean
+rms of frequency,rms
+normalize of MOSFETCurrent,normalize
+std of Load1,std
+sqr of loss power,sqr
+mod of drain voltage,mod
+sqrt of MOSFETvoltage,sqrt
+mean of Time,mean
+log of PrimaryWindingvoltage,log
+sum of input current,sum
+median of loss power,median
+peak-to-peak of MOSFETCurrent,peak-to-peak
+std of output power,std
+min of Time,min
+log of Source_Voltage,log
+abs max of Time,abs
+normalize of switch current,normalize
+squared mean of MOSFETjunctionTemp,squared
+mean of load current,mean
+mean of gate voltage,mean
+clip of Load1,clip
+diff of phase current,diff
+log of ambient temperature,log
+div of output power,div
+clip of frequency,clip
+sum of output voltage,sum
+median of LoadPower,median
+peak-to-peak of gate voltage,peak-to-peak
+abs max of temperature,abs
+log of PrimaryWindingCurrent,log
+squared mean of inrush current,squared
+mod of input power,mod
+log of Load1,log
+variance of SourceCurrent,variance
+sqr of PrimaryWindingCurrent,sqr
+max of supply voltage,max
+div of efficiency,div
+sum of drain voltage,sum
+div of charging current,div
+sqrt of RCDClampCurrent,sqrt
+abs max of SourcePower,abs
+variance of battery voltage,variance
+exp of supply voltage,exp
+abs max of Source_Voltage,abs
+derivative of Load1,derivative
+normalize of output voltage,normalize
+sqrt of input voltage,sqrt
+min of charging current,min
+mod of power,mod
+peak of power,peak
+sum of power,sum
+log of MOSFETjunctionTemp,log
+average of Source_Voltage,average
+variance of Load1,variance
+mod of SecondaryWindingCurrent,mod
+div of PrimaryWindingvoltage,div
+max of MOSFETjunctionTemp,max
+mod of phase current,mod
+squared mean of power,squared
+abs max of frequency,abs
+average of input voltage,average
+div of SourceCurrent,div
+derivative of SecondaryWindingvoltage,derivative
+abs min of output power,abs
+abs min of PrimaryWindingvoltage,abs
+abs min of Load1,abs
+sqrt of inrush current,sqrt
+normalize of input power,normalize
+abs min of input voltage,abs
+average of RCDClampDissipation,average
+max of output voltage,max
+diff of RCDClampDissipation,diff
+abs of Source_Voltage,abs
+clip of duty cycle,clip
+median of power,median
+derivative of output current,derivative
+derivative of duty cycle,derivative
+sum of SecondaryWindingvoltage,sum
+mod of LoadCurrent,mod
+median of output voltage,median
+abs max of ambient temperature,abs
+peak-to-peak of load voltage,peak-to-peak
+sum of battery current,sum
+integral of frequency,integral
+min of RCDClampCurrent,min
+min of load current,min
+sum of LoadPower,sum
+rms of input power,rms
+div of SecondaryWindingvoltage,div
+squared mean of ambient temperature,squared
+variance of SourcePower,variance
+sqr of input current,sqr
+mod of discharging current,mod
+clip of input power,clip
+sqr of SourceCurrent,sqr
+abs of switching frequency,abs
+abs max of output current,abs
+median of junction temperature,median
+exp of Load1,exp
+exp of input voltage,exp
+abs of SecondaryWindingCurrent,abs
+rms of efficiency,rms
+variance of SecondaryWindingvoltage,variance
+normalize of input current,normalize
+diff of load voltage,diff
+diff of MOSFETvoltage,diff
+div of PrimaryWindingCurrent,div
+median of SecondaryWindingCurrent,median
+average of reference voltage,average
+median of PrimaryWindingvoltage,median
+std of SourcePower,std
+abs of input power,abs
+average of LoadPower,average
+mod of Source_Voltage,mod
+peak of switching frequency,peak
+sqrt of output power,sqrt
+rms of Time,rms
+sqrt of MOSFETCurrent,sqrt
+log of loss power,log
+peak-to-peak of PrimaryWindingvoltage,peak-to-peak
+median of phase current,median
+median of reference voltage,median
+average of supply voltage,average
+log of SecondaryWindingCurrent,log
+clip of PrimaryWindingCurrent,clip
+sum of gate voltage,sum
+diff of battery current,diff
+peak-to-peak of duty cycle,peak-to-peak
+derivative of phase current,derivative
+min of discharging current,min
+rms of input voltage,rms
+abs of ambient temperature,abs
+normalize of PrimaryWindingvoltage,normalize
+squared mean of input power,squared
+min of Source_Voltage,min
+derivative of efficiency,derivative
+average of SecondaryWindingvoltage,average
+min of phase current,min
+derivative of LoadCurrent,derivative
+normalize of temperature,normalize
+exp of load current,exp
+diff of load current,diff
+abs of reference voltage,abs
+abs of duty cycle,abs
+normalize of battery current,normalize
+div of input current,div
+exp of output voltage,exp
+rms of SourceCurrent,rms
+sqrt of gate voltage,sqrt
+peak-to-peak of output power,peak-to-peak
+exp of RCDClampCurrent,exp
+sqrt of SourcePower,sqrt
+derivative of input current,derivative
+mean of drain voltage,mean
+abs min of MOSFETjunctionTemp,abs
+diff of frequency,diff
+rms of inrush current,rms
+abs of charging current,abs
+max of discharging current,max
+peak of source voltage,peak
+squared mean of drain voltage,squared
+sqrt of PrimaryWindingvoltage,sqrt
+variance of RCDClampCurrent,variance
+abs of supply voltage,abs
+rms of RCDClampDissipation,rms
+variance of battery current,variance
+median of discharging current,median
+clip of output power,clip
+integral of phase current,integral
+clip of junction temperature,clip
+exp of inrush current,exp
+integral of switch current,integral
+peak of RCDClampVoltage,peak
+peak of frequency,peak
+abs max of LoadCurrent,abs
+diff of supply voltage,diff
+median of source voltage,median
+peak-to-peak of ambient temperature,peak-to-peak
+sqrt of phase current,sqrt
+log of input voltage,log
+sqr of MOSFETjunctionTemp,sqr
+average of RCDClampCurrent,average
+clip of SecondaryWindingvoltage,clip
+variance of Source_Voltage,variance
+mean of SourcePower,mean
+abs min of input current,abs
+peak of reference voltage,peak
+peak-to-peak of frequency,peak-to-peak
+std of input voltage,std
+squared mean of temperature,squared
+max of RCDClampCurrent,max
+sqr of SecondaryWindingCurrent,sqr
+abs min of duty cycle,abs
+std of discharging current,std
+log of output current,log
+clip of SourceCurrent,clip
+rms of Load1,rms
+mean of loss power,mean
+normalize of battery voltage,normalize
+sqrt of LoadPower,sqrt
+abs min of RCDClampVoltage,abs
+clip of supply voltage,clip
+exp of PrimaryWindingvoltage,exp
+normalize of frequency,normalize
+std of input power,std
+derivative of source voltage,derivative
+std of drain voltage,std
+max of switch current,max
+sqr of frequency,sqr
+peak of output voltage,peak
+integral of switching frequency,integral
+normalize of output current,normalize
+variance of Time,variance
+log of output voltage,log
+mod of SourcePower,mod
+diff of output current,diff
+div of Load1,div
+div of switch current,div
+clip of battery voltage,clip
+mean of Load1,mean
+mean of battery voltage,mean
+exp of discharging current,exp
+exp of ambient temperature,exp
+exp of switch current,exp
+integral of load voltage,integral
+abs max of supply voltage,abs
+sqrt of RCDClampVoltage,sqrt
+squared mean of output current,squared
+peak of temperature,peak
+std of Source_Voltage,std
+clip of RCDClampDissipation,clip
+exp of load voltage,exp
+div of phase current,div
+std of output voltage,std
+integral of power,integral
+normalize of duty cycle,normalize
+mod of SourceCurrent,mod
+mean of SecondaryWindingvoltage,mean
+mod of SecondaryWindingvoltage,mod
+derivative of LoadPower,derivative
+peak-to-peak of MOSFETjunctionTemp,peak-to-peak
+rms of RCDClampVoltage,rms
+mean of inrush current,mean
+rms of Source_Voltage,rms
+peak-to-peak of temperature,peak-to-peak
+peak of Load1,peak
+mean of MOSFETCurrent,mean
+integral of load current,integral
+log of RCDClampDissipation,log
+peak-to-peak of SecondaryWindingCurrent,peak-to-peak
+sqr of input power,sqr
+min of gate voltage,min
+diff of discharging current,diff
+abs min of discharging current,abs
+squared mean of output voltage,squared
+peak of SecondaryWindingCurrent,peak
+exp of gate voltage,exp
+peak of MOSFETvoltage,peak
+mean of reference voltage,mean
+min of load voltage,min
+clip of RCDClampCurrent,clip
+average of battery voltage,average
+abs max of MOSFETjunctionTemp,abs
+clip of ambient temperature,clip
+min of source voltage,min
+sqrt of drain voltage,sqrt
+mean of PrimaryWindingCurrent,mean
+min of MOSFETjunctionTemp,min
+std of reference voltage,std
+clip of load current,clip
+mean of phase current,mean
+average of inrush current,average
+sqrt of output voltage,sqrt
+mean of input power,mean
+squared mean of load voltage,squared
+sum of input power,sum
+clip of inrush current,clip
+std of PrimaryWindingCurrent,std
+abs min of LoadPower,abs
+peak-to-peak of MOSFETvoltage,peak-to-peak
+mean of LoadPower,mean
+abs min of switch current,abs
+abs of loss power,abs
+abs min of ambient temperature,abs
+clip of discharging current,clip
+variance of output power,variance
+peak-to-peak of charging current,peak-to-peak
+log of RCDClampVoltage,log
+peak-to-peak of loss power,peak-to-peak
+abs of load current,abs
+exp of battery current,exp
+median of ambient temperature,median
+sqr of output power,sqr
+exp of MOSFETjunctionTemp,exp
+derivative of load current,derivative
+min of Load1,min
+squared mean of SecondaryWindingCurrent,squared
+peak of inrush current,peak
+abs min of supply voltage,abs
+integral of SecondaryWindingvoltage,integral
+abs of LoadPower,abs
+peak of ambient temperature,peak
+mean of MOSFETvoltage,mean
+abs min of loss power,abs
+abs of output current,abs
+peak of drain voltage,peak
+sqrt of Source_Voltage,sqrt
+integral of supply voltage,integral
+squared mean of load current,squared
+sqrt of load current,sqrt
+normalize of source voltage,normalize
+integral of input power,integral
+abs max of junction temperature,abs
+log of Time,log
+variance of duty cycle,variance
+peak of duty cycle,peak
+sqrt of SourceCurrent,sqrt
+average of load current,average
+diff of efficiency,diff
+variance of phase current,variance
+div of MOSFETjunctionTemp,div
+abs of gate voltage,abs
+peak of output power,peak
+average of gate voltage,average
+exp of frequency,exp
+abs min of switching frequency,abs
+max of SourceCurrent,max
+peak-to-peak of input current,peak-to-peak
+clip of switch current,clip
+median of drain voltage,median
+median of Source_Voltage,median
+std of gate voltage,std
+abs of source voltage,abs
+abs max of duty cycle,abs
+derivative of battery current,derivative
+sqrt of SecondaryWindingvoltage,sqrt
+variance of RCDClampVoltage,variance
+max of reference voltage,max
+max of load voltage,max
+peak of charging current,peak
+median of MOSFETCurrent,median
+sqrt of battery current,sqrt
+integral of efficiency,integral
+peak of SourceCurrent,peak
+sum of source voltage,sum
+abs of MOSFETCurrent,abs
+max of battery voltage,max
+div of LoadPower,div
+min of efficiency,min
+peak of junction temperature,peak
+squared mean of duty cycle,squared
+abs of inrush current,abs
+diff of source voltage,diff
+abs max of RCDClampCurrent,abs
+exp of RCDClampVoltage,exp
+min of battery voltage,min
+max of source voltage,max
+clip of source voltage,clip
+clip of temperature,clip
+normalize of MOSFETvoltage,normalize
+peak of MOSFETCurrent,peak
+min of input current,min
+normalize of SourceCurrent,normalize
+exp of output power,exp
+exp of temperature,exp
+mod of frequency,mod
+median of SecondaryWindingvoltage,median
+diff of SourcePower,diff
+max of load current,max
+rms of output power,rms
+sum of battery voltage,sum
+min of switch current,min
+sum of SecondaryWindingCurrent,sum
+normalize of supply voltage,normalize
+squared mean of switch current,squared
+std of temperature,std
+peak of supply voltage,peak
+sqrt of load voltage,sqrt
+max of SecondaryWindingCurrent,max
+derivative of MOSFETvoltage,derivative
+peak-to-peak of SecondaryWindingvoltage,peak-to-peak
+div of battery voltage,div
+sum of LoadCurrent,sum
+max of LoadCurrent,max
+std of switch current,std
+rms of LoadPower,rms
+div of discharging current,div
+std of loss power,std
+div of ambient temperature,div
+clip of MOSFETCurrent,clip
+sum of MOSFETCurrent,sum
+max of power,max
+mean of duty cycle,mean
+abs of drain voltage,abs
+log of phase current,log
+abs max of RCDClampVoltage,abs
+log of LoadPower,log
+abs of output power,abs
+integral of Source_Voltage,integral
+mean of battery current,mean
+derivative of loss power,derivative
+integral of source voltage,integral
+derivative of switch current,derivative
+mean of temperature,mean
+exp of RCDClampDissipation,exp
+derivative of battery voltage,derivative
+derivative of SourceCurrent,derivative
+squared mean of switching frequency,squared
+min of ambient temperature,min
+squared mean of battery voltage,squared
+abs max of MOSFETCurrent,abs
+exp of MOSFETvoltage,exp
+normalize of loss power,normalize
+diff of MOSFETCurrent,diff
+derivative of inrush current,derivative
+mean of RCDClampDissipation,mean
+variance of load current,variance
+derivative of Time,derivative
+mean of MOSFETjunctionTemp,mean
+mod of MOSFETCurrent,mod
+normalize of input voltage,normalize
+abs of RCDClampVoltage,abs
+normalize of power,normalize
+sum of frequency,sum
+squared mean of PrimaryWindingCurrent,squared
+peak-to-peak of Load1,peak-to-peak
+div of LoadCurrent,div
+median of MOSFETvoltage,median
+exp of SourceCurrent,exp
+sqr of reference voltage,sqr
+variance of frequency,variance
+derivative of MOSFETCurrent,derivative
+rms of loss power,rms
+diff of LoadPower,diff
+peak-to-peak of input voltage,peak-to-peak
+integral of ambient temperature,integral
+normalize of discharging current,normalize
+exp of battery voltage,exp
+peak-to-peak of phase current,peak-to-peak
+median of Time,median
+std of LoadPower,std
+sqr of LoadPower,sqr
+sqr of junction temperature,sqr
+exp of LoadCurrent,exp
+std of supply voltage,std
+sum of temperature,sum
+std of junction temperature,std
+min of MOSFETCurrent,min
+rms of PrimaryWindingCurrent,rms
+div of MOSFETvoltage,div
+squared mean of RCDClampVoltage,squared
+abs min of gate voltage,abs
+exp of MOSFETCurrent,exp
+abs max of LoadPower,abs
+rms of switching frequency,rms
+derivative of ambient temperature,derivative
+derivative of frequency,derivative
+peak-to-peak of SourcePower,peak-to-peak
+derivative of load voltage,derivative
+mod of Time,mod
+normalize of drain voltage,normalize
+sqr of battery current,sqr
+derivative of discharging current,derivative
+peak-to-peak of output current,peak-to-peak
+mod of MOSFETvoltage,mod
+sqr of gate voltage,sqr
+peak-to-peak of source voltage,peak-to-peak
+diff of loss power,diff
+average of duty cycle,average
+integral of output current,integral
+normalize of output power,normalize
+derivative of switching frequency,derivative
+peak-to-peak of RCDClampVoltage,peak-to-peak
+mean of output voltage,mean
+abs min of drain voltage,abs
+median of input current,median
+sqr of Source_Voltage,sqr
+variance of ambient temperature,variance
+variance of junction temperature,variance
+rms of gate voltage,rms
+log of battery current,log
+sqrt of Time,sqrt
+normalize of load voltage,normalize
+sqr of output current,sqr
+max of Source_Voltage,max
+sqr of MOSFETvoltage,sqr
+min of output power,min
+div of supply voltage,div
+peak of RCDClampCurrent,peak
+sum of MOSFETjunctionTemp,sum
+median of RCDClampCurrent,median
+mod of loss power,mod
+clip of loss power,clip
+abs min of phase current,abs
+mod of output voltage,mod
+mod of switching frequency,mod
+abs min of MOSFETCurrent,abs
+peak-to-peak of switch current,peak-to-peak
+std of load current,std
+integral of output power,integral
+mean of output current,mean
+sqr of SecondaryWindingvoltage,sqr
+clip of MOSFETjunctionTemp,clip
+exp of junction temperature,exp
+max of temperature,max
+diff of charging current,diff
+normalize of RCDClampCurrent,normalize
+peak-to-peak of supply voltage,peak-to-peak
+min of output current,min
+max of MOSFETCurrent,max
+normalize of MOSFETjunctionTemp,normalize
+average of drain voltage,average
+abs of Load1,abs
+average of Load1,average
+div of RCDClampDissipation,div
+exp of output current,exp
+derivative of power,derivative
+max of PrimaryWindingvoltage,max
+mean of output power,mean
+abs of RCDClampDissipation,abs
+sum of load current,sum
+squared mean of loss power,squared
+std of phase current,std
+div of load current,div
+abs max of Load1,abs
+std of SecondaryWindingvoltage,std
+peak-to-peak of reference voltage,peak-to-peak
+sqr of output voltage,sqr
+normalize of Time,normalize
+mean of Source_Voltage,mean
+abs max of inrush current,abs
+derivative of temperature,derivative
+median of LoadCurrent,median
+diff of PrimaryWindingCurrent,diff
+std of ambient temperature,std
+peak of SecondaryWindingvoltage,peak
+diff of ambient temperature,diff
+mod of RCDClampVoltage,mod
+peak-to-peak of output voltage,peak-to-peak
+min of drain voltage,min
+rms of output voltage,rms
+mod of PrimaryWindingvoltage,mod
+derivative of Source_Voltage,derivative
+diff of junction temperature,diff
+mod of charging current,mod
+sqrt of ambient temperature,sqrt
+sqr of Time,sqr
+abs of Time,abs
+average of output voltage,average
+mean of input current,mean
+abs max of RCDClampDissipation,abs
+div of inrush current,div
+peak-to-peak of drain voltage,peak-to-peak
+rms of load voltage,rms
+sqr of RCDClampVoltage,sqr
+std of RCDClampCurrent,std
+abs of efficiency,abs
+abs min of load voltage,abs
+div of loss power,div
+log of switching frequency,log
+derivative of RCDClampVoltage,derivative
+variance of PrimaryWindingvoltage,variance
+min of SecondaryWindingvoltage,min
+max of duty cycle,max
+median of Load1,median
+median of output power,median
+min of inrush current,min
+median of supply voltage,median
+squared mean of input current,squared
+mod of ambient temperature,mod
+abs of battery voltage,abs
+integral of drain voltage,integral
+median of temperature,median
+mod of RCDClampCurrent,mod
+exp of LoadPower,exp
+abs max of load voltage,abs
+clip of Source_Voltage,clip
+mod of Load1,mod
+mean of LoadCurrent,mean
+peak of input power,peak

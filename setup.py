@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="simpyq",
-    version="1.0.1",
+    version="1.0.2",
     author="Mohamed Gueni",
     author_email="mohamedgueni@outlook.com",
     description="CLI tool to query and analyze simulation CSV data with natural language",
@@ -17,7 +17,6 @@ setup(
         "matplotlib",
         "rich",
         "pyfiglet",
-        "spacy",
     ],
     entry_points={
         "console_scripts": [

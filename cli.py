@@ -8,12 +8,12 @@ from rich.console import Console
 from rich.table import Table
 from pyfiglet import Figlet
 
-console = Console()
-log_path = "D:/WORKSPACE/simpyq/simpyq/out/logs/"
-plots_path = "D:/WORKSPACE/simpyq/simpyq/out/plots/"
-utc_stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d_%H%M%S")
+console          = Console()
+base_dir         = os.path.dirname(os.path.abspath(__file__))
+log_path         = base_dir+ "/out/logs/"
+plots_path       = base_dir+ "/out/plots/"
+utc_stamp        = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d_%H%M%S")
 
-# Units detection helper
 def guess_unit(signal_name):
     name = signal_name.lower()
     if "voltage" in name or "vout" in name or "v" in name:
@@ -26,8 +26,7 @@ def guess_unit(signal_name):
         return "[°C]"
     return "[unit]"
 
-# Math operations
-OPERATIONS = {
+OPERATIONS       = {
     "mean": np.mean,
     "average": np.mean,
     "rms": lambda x: np.sqrt(np.mean(np.square(x))),
@@ -47,16 +46,16 @@ OPERATIONS = {
 }
 
 def get_nlp(signal_names):
-    nlp = spacy.load("en_core_web_trf")
+    nlp      = spacy.load("en_core_web_trf")
     patterns = [{"label": "ELECTRONIC_SIGNAL", "pattern": name} for name in signal_names]
-    ruler = nlp.add_pipe("entity_ruler", before="ner", config={"overwrite_ents": True})
+    ruler    = nlp.add_pipe("entity_ruler", before="ner", config={"overwrite_ents": True})
     ruler.add_patterns(patterns)
     return nlp
 
 def print_banner():
-    figlet = Figlet(font="slant")
-    line = figlet.renderText(".............................")
-    banner = figlet.renderText("    simpyQ")
+    figlet   = Figlet(font="slant")
+    line     = figlet.renderText(".............................")
+    banner   = figlet.renderText("    simpyQ")
     console.print(f"    [bold cyan]{line}[/bold cyan]")
     console.print(f"[bold cyan]{banner}[/bold cyan]")
     console.print("      Purpose: Query and analyze simulation data\n")
@@ -67,7 +66,7 @@ def print_banner():
     console.print(f"[bold cyan]{line}[/bold cyan]")
 
 def show_signals(df):
-    table = Table(title="Available Signals")
+    table  = Table(title="Available Signals")
     table.add_column("Index", style="cyan")
     table.add_column("Signal Name", style="magenta")
     for i, col in enumerate(df.columns):
@@ -75,7 +74,7 @@ def show_signals(df):
     console.print(table)
 
 def process_query(df, query, nlp):
-    doc = nlp(query)
+    doc         = nlp(query)
     for sent in doc.sents:
         ent_map = {}
         for ent in sent.ents:
@@ -89,7 +88,6 @@ def process_query(df, query, nlp):
                 result = OPERATIONS[op](df[signal].dropna().values)
                 unit = guess_unit(signal)
                 query = query.replace(f"{op} of {signal}", f"{result:.16f} {unit}")
-    # Remove units before eval
     query_numeric = re.sub(r"\[.*?\]", "", query)
     final_result = eval(query_numeric)
     return final_result, query, unit
@@ -102,12 +100,11 @@ def find_op(text):
 
 def plot_signals(df, signal_names, start=None, end=None, utc_stamp=""):
     os.makedirs(plots_path, exist_ok=True)
-    time = df.iloc[:, 0]
+    time     = df.iloc[:, 0]
     if start is not None and end is not None:
         mask = (time >= start) & (time <= end)
         time = time[mask]
-        df = df.loc[mask]
-
+        df   = df.loc[mask]
     for signal in signal_names:
         if signal not in df.columns:
             console.print(f"[red]Signal {signal} not found.[/red]")
@@ -134,34 +131,27 @@ def main():
     parser.add_argument("--plot", nargs="+", help="Plot one or more signals vs time")
     parser.add_argument("--start", type=float, help="Start time for plotting")
     parser.add_argument("--end", type=float, help="End time for plotting")
-    args = parser.parse_args()
-
+    args         = parser.parse_args()
     print_banner()
-
     try:
-        df = pd.read_csv(args.csv)
+        df       = pd.read_csv(args.csv)
     except Exception as e:
         console.print(f"[bold red]CSV loading error:[/bold red] {e}")
         return
-
     signal_names = df.columns.tolist()
-    nlp = get_nlp(signal_names)
-
+    nlp          = get_nlp(signal_names)
     if args.show:
         show_signals(df)
         return
-
     if args.plot:
         try:
             plot_signals(df, args.plot, args.start, args.end, utc_stamp)
         except Exception as e:
             console.print(f"[bold red]Plotting error:[/bold red] {e}")
         return
-
-    # Interactive query loop
     while True:
         try:
-            user_input = input("\n[simpyq] Enter query (or type 'exit'): ").strip()
+            user_input   = input("\n[simpyq] Enter query (or type 'exit'): ").strip()
             if user_input.lower() in ("exit", "quit"):
                 console.print("[bold cyan]Exiting simpyq. Goodbye![/bold cyan]")
                 break
@@ -176,7 +166,6 @@ def main():
         except Exception as e:
             console.print(f"[bold red]Query error:[/bold red] {e}")
             log_result(f"{log_path}/querylog_error.log", user_input, f"ERROR: {e}")
-
 
 if __name__ == "__main__":
     main()

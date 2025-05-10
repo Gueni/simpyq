@@ -19,7 +19,6 @@
 #? -------------------------------------------------------------------------------  
 #? ------------------------------------------------------------------------------- 
 
-
 import os
 import re
 import pkg_resources
@@ -37,7 +36,6 @@ def extract_imports_from_file(filepath: str) -> List[str]:
     return imports
 
 def get_installed_version(package_name: str) -> str:
-
     try:
         distribution = pkg_resources.get_distribution(package_name)
         return distribution.version
@@ -46,27 +44,22 @@ def get_installed_version(package_name: str) -> str:
 
 def populate_requirements_txt(project_dir: str, requirements_file: str) -> None:
     imports = set()
-    # Walk through all files in the project directory
     for root, _, files in os.walk(project_dir):
         for file in files:
             if file.endswith('.py'):
                 filepath = os.path.join(root, file)
                 file_imports = extract_imports_from_file(filepath)
                 imports.update(file_imports)
-    # Get versions and write to requirements.txt
     with open(requirements_file, 'w') as req_file:
-        # Determine the maximum length of package names
         max_name_length = max(len(imp) for imp in imports) if imports else 0
         
         for imp in sorted(imports):
             version = get_installed_version(imp)
             if version != 'unknown':
-                # Use ljust to align package names to the right
                 line = f'{imp.ljust(max_name_length)} == {version}\n'
                 req_file.write(line)
-
     print(f'Requirements file "{requirements_file}" has been populated.')
 
-project_directory = r'D:/WORKSPACE/simpyq/simpyq/' 
-requirements_txt  = r'D:/WORKSPACE/simpyq/simpyq/requirements.txt' 
-populate_requirements_txt(project_directory, requirements_txt)
+base_dir          = os.path.dirname(os.path.abspath(__file__))
+requirements_txt  = base_dir + "/requirements.txt"
+populate_requirements_txt(base_dir, requirements_txt)
