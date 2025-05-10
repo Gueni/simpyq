@@ -3,7 +3,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import TfidfVectorizer
 import joblib
 import pandas as pd
-import numpy as np
 import os
 
 base_dir                         = os.path.dirname(os.path.abspath(__file__))
