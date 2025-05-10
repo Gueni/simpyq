@@ -7,6 +7,7 @@
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
 > CLI tool for querying simulation CSV data using natural language.
+[![PyPI version](https://img.shields.io/pypi/v/simpyq.svg)](https://pypi.org/project/simpyq/)
 
 Analyze and visualize simulation data from CSV files using natural language queries interpreted via spaCy and a rule-enhanced NLP pipeline.
 
